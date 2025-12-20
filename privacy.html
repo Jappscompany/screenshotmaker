@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 24px;
+      color: #111;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 24px;
+    }
+    p {
+      margin: 12px 0;
+    }
+    .lang {
+      display: none;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lang =
+        (navigator.language || navigator.userLanguage || "").toLowerCase();
+
+      const isKorean = lang.startsWith("ko");
+
+      document.getElementById(
+        isKorean ? "privacy-ko" : "privacy-en"
+      ).style.display = "block";
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= English (Default) ================= -->
+  <div id="privacy-en" class="lang">
+    <h1>Privacy Policy</h1>
+
+    <p>
+      This Privacy Policy describes how the app
+      <strong>Screenshot (App) Maker</strong> ("the App") handles user data.
+    </p>
+
+    <h2>Information Collection</h2>
+    <p>
+      The App does not collect, store, or transmit any personal information.
+      All images, templates, and generated screenshots remain on the user's device.
+    </p>
+
+    <h2>Files and Photos Access</h2>
+    <p>
+      The App may request access to your photo library or Files app
+      solely for the purpose of importing images selected by the user.
+      No data is uploaded to external servers without user consent.
+    </p>
+
+    <h2>AI Translation (Ollama)</h2>
+    <p>
+      When using the AI-powered text generation or translation feature,
+      the App communicates with a user-configured Ollama instance.
+      The App does not log or store the content processed by AI.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      The App does not use third-party analytics, advertising SDKs,
+      or tracking technologies.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      This Privacy Policy may be updated from time to time.
+      Any changes will be reflected on this page.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have any questions about this Privacy Policy,
+      please contact the developer via the App Store support page.
+    </p>
+  </div>
+
+  <!-- ================= Korean ================= -->
+  <div id="privacy-ko" class="lang">
+    <h1>개인정보 처리방침</h1>
+
+    <p>
+      본 개인정보 처리방침은
+      <strong>Screenshot (App) Maker</strong> 앱(이하 "앱")의
+      개인정보 처리 방식을 설명합니다.
+    </p>
+
+    <h2>개인정보 수집</h2>
+    <p>
+      본 앱은 어떠한 개인정보도 수집, 저장, 전송하지 않습니다.
+      모든 이미지, 템플릿 및 생성된 스크린샷은 사용자의 기기 내에만 저장됩니다.
+    </p>
+
+    <h2>파일 및 사진 접근</h2>
+    <p>
+      앱은 사용자가 선택한 이미지를 불러오기 위한 목적으로만
+      사진 앨범 또는 Files 접근 권한을 요청할 수 있습니다.
+      사용자의 동의 없이 외부 서버로 데이터가 전송되지 않습니다.
+    </p>
+
+    <h2>AI 번역 기능 (Ollama)</h2>
+    <p>
+      AI 기반 문구 생성 또는 번역 기능 사용 시,
+      앱은 사용자가 설정한 Ollama 인스턴스와 통신합니다.
+      AI 처리 내용은 앱에서 별도로 저장하거나 기록하지 않습니다.
+    </p>
+
+    <h2>제3자 서비스</h2>
+    <p>
+      본 앱은 제3자 분석 도구, 광고 SDK,
+      추적 기술을 사용하지 않습니다.
+    </p>
+
+    <h2>변경 사항</h2>
+    <p>
+      본 개인정보 처리방침은 필요에 따라 변경될 수 있으며,
+      변경 시 본 페이지를 통해 안내됩니다.
+    </p>
+
+    <h2>문의</h2>
+    <p>
+      개인정보 처리방침과 관련된 문의는
+      App Store의 개발자 지원 페이지를 통해 연락해 주시기 바랍니다.
+    </p>
+  </div>
+
+</body>
+</html>

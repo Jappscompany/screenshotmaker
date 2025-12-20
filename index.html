@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Screenshot (App) Maker</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 24px;
+      color: #111;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+    }
+    p {
+      margin: 12px 0;
+    }
+    ul {
+      margin: 12px 0 12px 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .lang {
+      display: none;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lang =
+        (navigator.language || navigator.userLanguage || "").toLowerCase();
+      const isKorean = lang.startsWith("ko");
+
+      document.getElementById(
+        isKorean ? "content-ko" : "content-en"
+      ).style.display = "block";
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= English (Default) ================= -->
+  <div id="content-en" class="lang">
+    <h1>Screenshot (App) Maker</h1>
+
+    <p>
+      <strong>Screenshot (App) Maker</strong> helps you create clean,
+      modern App Store screenshots effortlessly using flexible templates.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Create stylish App Store screenshots using customizable templates</li>
+      <li>Import images from the Files app or your photo library</li>
+      <li>Support for iPhone, iPad, Apple Watch, and Apple TV screenshots</li>
+      <li>Add marketing text freely and adjust layout visually</li>
+    </ul>
+
+    <h2>AI-Powered Localization</h2>
+    <p>
+      With Ollama AI integration, you can automatically generate
+      translated marketing text for different country codes,
+      making global App Store submissions fast and easy.
+    </p>
+
+    <h2>Privacy First</h2>
+    <p>
+      All editing and image generation are performed locally on your device.
+      The app does not collect personal data or track users.
+    </p>
+
+    <h2>Learn More</h2>
+    <p>
+      Read our <a href="./privacy.html">Privacy Policy</a>
+      to understand how we protect your data.
+    </p>
+
+    <div class="footer">
+      © 2025 Screenshot (App) Maker
+    </div>
+  </div>
+
+  <!-- ================= Korean ================= -->
+  <div id="content-ko" class="lang">
+    <h1>Screenshot (App) Maker</h1>
+
+    <p>
+      <strong>Screenshot (App) Maker</strong>는
+      템플릿을 활용해 세련된 App Store 스크린샷을
+      쉽고 빠르게 제작할 수 있는 앱입니다.
+    </p>
+
+    <h2>주요 기능</h2>
+    <ul>
+      <li>템플릿 기반으로 깔끔한 앱스토어 스크린샷 제작</li>
+      <li>Files 앱 또는 사진 앨범에서 이미지 불러오기</li>
+      <li>iPhone, iPad, Apple Watch, Apple TV 스크린샷 지원</li>
+      <li>문구 추가 및 레이아웃 자유 편집</li>
+    </ul>
+
+    <h2>AI 자동 번역</h2>
+    <p>
+      Ollama AI 연동을 통해,
+      원하는 국가 코드에 맞는 마케팅 문구를
+      자동으로 생성하고 번역할 수 있습니다.
+      글로벌 앱 배포를 간편하게 만들어줍니다.
+    </p>
+
+    <h2>개인정보 보호</h2>
+    <p>
+      모든 이미지 편집과 생성 작업은
+      사용자의 기기 내에서만 수행됩니다.
+      앱은 개인정보를 수집하거나 추적하지 않습니다.
+    </p>
+
+    <h2>자세히 알아보기</h2>
+    <p>
+      개인정보 처리 방식은
+      <a href="./privacy.html">개인정보 처리방침</a>에서 확인할 수 있습니다.
+    </p>
+
+    <div class="footer">
+      © 2025 Screenshot (App) Maker
+    </div>
+  </div>
+
+</body>
+</html>
