@@ -341,7 +341,7 @@
 
     function updateLangChip(code, dict) {
       const chip = document.getElementById("langChip");
-      const label = dict?.meta?.languageName || LANG_LABELS[code] || code;
+      const label = LANG_LABELS[code] || code;
       chip.textContent = label;
     }
 
