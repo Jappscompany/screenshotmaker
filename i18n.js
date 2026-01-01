@@ -140,16 +140,9 @@
   }
 
   async function loadViaFetch(lang) {
-    const url = `./i18n/${lang}.json`;
-    console.log("[i18n] Fetching:", url);
-    const res = await fetch(url, { cache: "no-cache" });
-    if (!res.ok) {
-      console.error("[i18n] Fetch failed:", res.status, res.statusText);
-      throw new Error(`Failed to load i18n: ${lang}`);
-    }
-    const data = await res.json();
-    console.log("[i18n] Loaded:", lang, Object.keys(data).length, "keys");
-    return data;
+    const res = await fetch(`./i18n/${lang}.json`, { cache: "no-cache" });
+    if (!res.ok) throw new Error(`Failed to load i18n: ${lang}`);
+    return await res.json();
   }
 
   function loadFromWindow(lang) {
@@ -169,33 +162,22 @@
   }
 
   async function load(lang) {
-    console.log("[i18n] load() called for:", lang);
-    
     const existing = loadFromWindow(lang);
-    if (existing) {
-      console.log("[i18n] Found in window:", lang);
-      return existing;
-    }
+    if (existing) return existing;
 
     try {
       return await loadViaFetch(lang);
-    } catch (fetchErr) {
-      console.warn("[i18n] Fetch failed, trying script:", fetchErr.message);
+    } catch (_) {
       try {
         const viaScript = await loadScript(lang);
         if (viaScript) return viaScript;
-      } catch (scriptErr) {
-        console.warn("[i18n] Script also failed:", scriptErr.message);
-      }
-      throw new Error("No i18n data for " + lang);
+      } catch (_) {}
+      throw new Error("No i18n data");
     }
   }
 
   async function setLang(lang) {
-    const originalLang = lang;
     lang = normalize(lang);
-    console.log("[i18n] setLang called:", originalLang, "->", lang);
-    
     document.documentElement.lang = lang;
     localStorage.setItem(STORAGE_KEY, lang);
 
@@ -214,18 +196,13 @@
     try {
       const dict = await load(lang);
       apply(dict);
-      console.log("[i18n] Applied:", lang);
     } catch (e) {
-      console.error("[i18n] Load failed for", lang, ":", e.message);
       // Fallback to English
       if (lang !== "en") {
         try {
           const dict = await load("en");
           apply(dict);
-          console.log("[i18n] Fallback to en");
-        } catch (_) {
-          console.error("[i18n] Fallback to en also failed");
-        }
+        } catch (_) {}
       }
     }
   }
@@ -266,7 +243,6 @@
     const saved = localStorage.getItem(STORAGE_KEY);
     const browser = navigator.language || navigator.userLanguage || "en";
     const initial = normalize(saved || browser);
-    console.log("[i18n] Init - saved:", saved, "browser:", browser, "initial:", initial);
 
     // Button-based language switching
     document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
