@@ -3,144 +3,218 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy</title>
+  <title data-i18n="policy_meta_title">Privacy Policy — OCRBook</title>
+  <meta name="description" content="" data-i18n-attr="content:policy_meta_desc" />
 
   <style>
+    :root {
+      --bg: #ffffff;
+      --panel: #ffffff;
+      --fg: #0b1220;
+      --muted: #5a647a;
+      --border: rgba(15, 23, 42, 0.10);
+      --shadow: 0 18px 60px rgba(2, 6, 23, 0.10);
+      --accent: #2563eb;
+      --accent2: #7c3aed;
+      --accentSoft: rgba(37, 99, 235, 0.10);
+      --radius: 18px;
+      --max: 800px;
+      --pad: 22px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #050816;
+        --panel: rgba(5, 8, 22, 0.92);
+        --fg: #f5f7ff;
+        --muted: #a2abc6;
+        --border: rgba(148, 163, 184, 0.18);
+        --shadow: 0 24px 90px rgba(0, 0, 0, 0.70);
+        --accentSoft: rgba(79, 156, 255, 0.12);
+        --accent: #4f9cff;
+        --accent2: #8a6dff;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      margin: 24px;
-      color: #111;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background:
+        radial-gradient(900px 520px at 20% 0%, rgba(37,99,235,0.22), transparent 55%),
+        radial-gradient(900px 520px at 80% 0%, rgba(124,58,237,0.18), transparent 55%),
+        var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
     }
-    h1 {
-      font-size: 24px;
-      margin-bottom: 16px;
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 20px var(--pad) 48px; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding: 10px 0 24px;
+      position: sticky; top: 0;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.88), rgba(255,255,255,0));
+      backdrop-filter: blur(10px);
     }
+    @media (prefers-color-scheme: dark) {
+      header { background: linear-gradient(to bottom, rgba(5,8,22,0.88), rgba(5,8,22,0)); }
+    }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .mark {
+      width: 40px; height: 40px; border-radius: 14px;
+      background: conic-gradient(from 180deg, var(--accent), var(--accent2), #2df2c8, var(--accent));
+      box-shadow: 0 0 28px rgba(37,99,235,0.35);
+      display: grid; place-items: center;
+      color: #050816; font-weight: 800;
+    }
+    .brand h1 { font-size: 16px; font-weight: 750; letter-spacing: 0.2px; }
+
+    .lang {
+      display: flex; gap: 8px; align-items: center;
+      border: 1px solid var(--border); border-radius: 999px; padding: 4px;
+      background: rgba(255,255,255,0.55);
+    }
+    @media (prefers-color-scheme: dark) {
+      .lang { background: rgba(10, 16, 34, 0.55); }
+    }
+    .lang select {
+      border: 0; background: transparent; padding: 8px 12px; border-radius: 999px;
+      font-size: 13px; color: var(--muted); cursor: pointer; outline: none;
+    }
+    .lang select:focus { background: var(--accentSoft); color: var(--accent); }
+    @media (prefers-color-scheme: dark) {
+      .lang select { color: var(--muted); background: transparent; }
+      .lang select option { background: var(--panel); color: var(--fg); }
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 6px);
+      box-shadow: var(--shadow);
+      padding: 32px;
+    }
+
     h2 {
-      font-size: 18px;
-      margin-top: 24px;
+      font-size: clamp(24px, 4vw, 32px);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
     }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--fg);
+    }
+
     p {
       margin: 12px 0;
+      color: var(--muted);
     }
-    .lang {
-      display: none;
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      margin-top: 28px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.55);
+      color: var(--fg);
+    }
+    @media (prefers-color-scheme: dark) {
+      .back-link { background: rgba(10, 16, 34, 0.55); }
+    }
+    .back-link:hover { text-decoration: none; background: var(--accentSoft); color: var(--accent); }
+
+    footer {
+      margin-top: 28px;
+      padding: 14px 4px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
     }
   </style>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const lang =
-        (navigator.language || navigator.userLanguage || "").toLowerCase();
-
-      const isKorean = lang.startsWith("ko");
-
-      document.getElementById(
-        isKorean ? "privacy-ko" : "privacy-en"
-      ).style.display = "block";
-    });
-  </script>
 </head>
 
 <body>
+  <div class="wrap">
+    <header>
+      <a href="./index.html" class="brand" style="text-decoration:none; color:inherit;">
+        <div class="mark">O</div>
+        <div>
+          <h1>OCRBook</h1>
+        </div>
+      </a>
 
-  <!-- ================= English (Default) ================= -->
-  <div id="privacy-en" class="lang">
-    <h1>Privacy Policy</h1>
+      <div class="lang" aria-label="Language" data-lang-dropdown></div>
+    </header>
 
-    <p>
-      This Privacy Policy describes how the app
-      <strong>Screenshot (App) Maker</strong> ("the App") handles user data.
-    </p>
+    <main class="card">
+      <h2 data-i18n="policy_title">Privacy Policy</h2>
 
-    <h2>Information Collection</h2>
-    <p>
-      The App does not collect, store, or transmit any personal information.
-      All images, templates, and generated screenshots remain on the user's device.
-    </p>
+      <p data-i18n="policy_intro">
+        This Privacy Policy describes how the app <strong>OCRBook</strong> ("the App") handles user data.
+      </p>
 
-    <h2>Files and Photos Access</h2>
-    <p>
-      The App may request access to your photo library or Files app
-      solely for the purpose of importing images selected by the user.
-      No data is uploaded to external servers without user consent.
-    </p>
+      <h3 data-i18n="policy_collection_title">Information Collection</h3>
+      <p data-i18n="policy_collection_body">
+        The App does not collect, store, or transmit any personal information.
+        All images, templates, and generated content remain on the user's device.
+      </p>
 
-    <h2>AI Translation (Ollama)</h2>
-    <p>
-      When using the AI-powered text generation or translation feature,
-      the App communicates with a user-configured Ollama instance.
-      The App does not log or store the content processed by AI.
-    </p>
+      <h3 data-i18n="policy_files_title">Files and Photos Access</h3>
+      <p data-i18n="policy_files_body">
+        The App may request access to your photo library or Files app
+        solely for the purpose of importing images and documents selected by the user.
+        No data is uploaded to external servers without user consent.
+      </p>
 
-    <h2>Third-Party Services</h2>
-    <p>
-      The App does not use third-party analytics, advertising SDKs,
-      or tracking technologies.
-    </p>
+      <h3 data-i18n="policy_ai_title">AI Translation (Ollama)</h3>
+      <p data-i18n="policy_ai_body">
+        When using the AI-powered text generation or translation feature,
+        the App communicates with a user-configured Ollama instance.
+        The App does not log or store the content processed by AI.
+      </p>
 
-    <h2>Changes</h2>
-    <p>
-      This Privacy Policy may be updated from time to time.
-      Any changes will be reflected on this page.
-    </p>
+      <h3 data-i18n="policy_thirdparty_title">Third-Party Services</h3>
+      <p data-i18n="policy_thirdparty_body">
+        The App does not use third-party analytics, advertising SDKs,
+        or tracking technologies.
+      </p>
 
-    <h2>Contact</h2>
-    <p>
-      If you have any questions about this Privacy Policy,
-      please contact the developer via the App Store support page.
-    </p>
+      <h3 data-i18n="policy_changes_title">Changes</h3>
+      <p data-i18n="policy_changes_body">
+        This Privacy Policy may be updated from time to time.
+        Any changes will be reflected on this page.
+      </p>
+
+      <h3 data-i18n="policy_contact_title">Contact</h3>
+      <p data-i18n="policy_contact_body">
+        If you have any questions about this Privacy Policy,
+        please contact the developer via the App Store support page.
+      </p>
+
+      <a href="./index.html" class="back-link">
+        <span>←</span>
+        <span data-i18n="policy_back">Back to Home</span>
+      </a>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> OCRBook. J-Apps. <span data-i18n="footer_rights">All rights reserved.</span></div>
+    </footer>
   </div>
 
-  <!-- ================= Korean ================= -->
-  <div id="privacy-ko" class="lang">
-    <h1>개인정보 처리방침</h1>
-
-    <p>
-      본 개인정보 처리방침은
-      <strong>Screenshot (App) Maker</strong> 앱(이하 "앱")의
-      개인정보 처리 방식을 설명합니다.
-    </p>
-
-    <h2>개인정보 수집</h2>
-    <p>
-      본 앱은 어떠한 개인정보도 수집, 저장, 전송하지 않습니다.
-      모든 이미지, 템플릿 및 생성된 스크린샷은 사용자의 기기 내에만 저장됩니다.
-    </p>
-
-    <h2>파일 및 사진 접근</h2>
-    <p>
-      앱은 사용자가 선택한 이미지를 불러오기 위한 목적으로만
-      사진 앨범 또는 Files 접근 권한을 요청할 수 있습니다.
-      사용자의 동의 없이 외부 서버로 데이터가 전송되지 않습니다.
-    </p>
-
-    <h2>AI 번역 기능 (Ollama)</h2>
-    <p>
-      AI 기반 문구 생성 또는 번역 기능 사용 시,
-      앱은 사용자가 설정한 Ollama 인스턴스와 통신합니다.
-      AI 처리 내용은 앱에서 별도로 저장하거나 기록하지 않습니다.
-    </p>
-
-    <h2>제3자 서비스</h2>
-    <p>
-      본 앱은 제3자 분석 도구, 광고 SDK,
-      추적 기술을 사용하지 않습니다.
-    </p>
-
-    <h2>변경 사항</h2>
-    <p>
-      본 개인정보 처리방침은 필요에 따라 변경될 수 있으며,
-      변경 시 본 페이지를 통해 안내됩니다.
-    </p>
-
-    <h2>문의</h2>
-    <p>
-      개인정보 처리방침과 관련된 문의는
-      App Store의 개발자 지원 페이지를 통해 연락해 주시기 바랍니다.
-    </p>
-  </div>
-
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="./i18n.js"></script>
 </body>
 </html>

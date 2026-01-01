@@ -2,147 +2,399 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Screenshot (App) Maker</title>
+  <title data-i18n="meta_title">OCRBook — Turn Scanned PDFs into Real Text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" data-i18n-attr="content:meta_desc" />
+  <meta name="robots" content="index,follow" />
 
   <style>
+    :root {
+      --bg: #ffffff;
+      --panel: #ffffff;
+      --fg: #0b1220;
+      --muted: #5a647a;
+      --border: rgba(15, 23, 42, 0.10);
+      --shadow: 0 18px 60px rgba(2, 6, 23, 0.10);
+      --accent: #2563eb;
+      --accent2: #7c3aed;
+      --accentSoft: rgba(37, 99, 235, 0.10);
+      --radius: 18px;
+      --max: 1040px;
+      --pad: 22px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #050816;
+        --panel: rgba(5, 8, 22, 0.92);
+        --fg: #f5f7ff;
+        --muted: #a2abc6;
+        --border: rgba(148, 163, 184, 0.18);
+        --shadow: 0 24px 90px rgba(0, 0, 0, 0.70);
+        --accentSoft: rgba(79, 156, 255, 0.12);
+        --accent: #4f9cff;
+        --accent2: #8a6dff;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background:
+        radial-gradient(900px 520px at 20% 0%, rgba(37,99,235,0.22), transparent 55%),
+        radial-gradient(900px 520px at 80% 0%, rgba(124,58,237,0.18), transparent 55%),
+        var(--bg);
+      color: var(--fg);
       line-height: 1.6;
-      margin: 24px;
-      color: #111;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 20px var(--pad) 48px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding: 10px 0 18px;
+      position: sticky; top: 0;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.88), rgba(255,255,255,0));
+      backdrop-filter: blur(10px);
     }
-    h2 {
-      font-size: 20px;
-      margin-top: 28px;
+    @media (prefers-color-scheme: dark) {
+      header { background: linear-gradient(to bottom, rgba(5,8,22,0.88), rgba(5,8,22,0)); }
     }
-    p {
-      margin: 12px 0;
+
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 210px; }
+    .mark {
+      width: 40px; height: 40px; border-radius: 14px;
+      background: conic-gradient(from 180deg, var(--accent), var(--accent2), #2df2c8, var(--accent));
+      box-shadow: 0 0 28px rgba(37,99,235,0.35);
+      display: grid; place-items: center;
+      color: #050816; font-weight: 800;
     }
-    ul {
-      margin: 12px 0 12px 20px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    .brand h1 { font-size: 16px; font-weight: 750; letter-spacing: 0.2px; }
+    .tagline { font-size: 12px; color: var(--muted); }
+
+    nav { display: flex; align-items: center; gap: 18px; font-size: 14px; color: var(--muted); }
+    nav a { padding: 8px 10px; border-radius: 999px; }
+    nav a:hover { background: var(--accentSoft); color: var(--accent); }
+
     .lang {
-      display: none;
+      display: flex; gap: 8px; align-items: center;
+      border: 1px solid var(--border); border-radius: 999px; padding: 4px;
+      background: rgba(255,255,255,0.55);
     }
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #666;
+    @media (prefers-color-scheme: dark) {
+      .lang { background: rgba(10, 16, 34, 0.55); }
     }
+    .lang select {
+      border: 0; background: transparent; padding: 8px 12px; border-radius: 999px;
+      font-size: 13px; color: var(--muted); cursor: pointer; outline: none;
+    }
+    .lang select:focus { background: var(--accentSoft); color: var(--accent); }
+    @media (prefers-color-scheme: dark) {
+      .lang select { color: var(--muted); background: transparent; }
+      .lang select option { background: var(--panel); color: var(--fg); }
+    }
+    .lang button {
+      border: 0; background: transparent; padding: 8px 12px; border-radius: 999px;
+      font-size: 13px; color: var(--muted); cursor: pointer;
+    }
+    .lang button[aria-pressed="true"] {
+      background: var(--accentSoft);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 6px);
+      box-shadow: var(--shadow);
+    }
+
+    .hero { padding: 28px; display: grid; gap: 22px; }
+    @media (min-width: 860px) { .hero { grid-template-columns: 1.15fr 0.85fr; align-items: start; } }
+
+    .hero h2 {
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .hero p { color: var(--muted); font-size: 16px; margin-bottom: 16px; max-width: 58ch; }
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .badge {
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.40);
+      color: var(--muted);
+    }
+    @media (prefers-color-scheme: dark) { .badge { background: rgba(10,16,34,0.45); } }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 12px 16px; border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.65);
+      font-weight: 700; font-size: 14px;
+      cursor: pointer;
+    }
+    @media (prefers-color-scheme: dark) { .btn { background: rgba(10,16,34,0.55); } }
+    .btn.primary {
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #050816;
+      box-shadow: 0 14px 38px rgba(37,99,235,0.35);
+    }
+
+    .panel {
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background:
+        radial-gradient(600px 220px at 0% 0%, rgba(37,99,235,0.16), transparent 60%),
+        radial-gradient(600px 220px at 100% 0%, rgba(124,58,237,0.12), transparent 60%),
+        rgba(255,255,255,0.5);
+      padding: 16px;
+    }
+    @media (prefers-color-scheme: dark) { .panel { background: rgba(10,16,34,0.45); } }
+    .panel h3 { font-size: 14px; letter-spacing: 0.02em; margin-bottom: 10px; }
+    .panel ul { display: grid; gap: 10px; list-style: none; color: var(--muted); font-size: 14px; }
+    .panel li { display: flex; gap: 10px; }
+    .dot { width: 9px; height: 9px; margin-top: 7px; border-radius: 999px; background: linear-gradient(135deg, var(--accent), var(--accent2)); flex: 0 0 auto; }
+
+    section { margin-top: 22px; padding: 22px; }
+    .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-bottom: 14px; }
+    .sec-head h3 { font-size: 18px; }
+    .sec-sub { color: var(--muted); font-size: 14px; }
+
+    .grid { display: grid; gap: 12px; }
+    @media (min-width: 860px) { .grid.cols3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (min-width: 860px) { .grid.cols4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+    .feat {
+      border-radius: 16px; border: 1px solid var(--border);
+      padding: 14px;
+      background: rgba(255,255,255,0.55);
+    }
+    @media (prefers-color-scheme: dark) { .feat { background: rgba(10,16,34,0.45); } }
+    .feat b { display: block; margin-bottom: 6px; }
+    .feat p { color: var(--muted); font-size: 13px; }
+
+    .step {
+      border-radius: 16px; border: 1px dashed rgba(148,163,184,0.40);
+      padding: 14px; background: rgba(255,255,255,0.45);
+    }
+    @media (prefers-color-scheme: dark) { .step { background: rgba(10,16,34,0.35); } }
+    .kicker {
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 6px; display: inline-block;
+    }
+    .step p { color: var(--muted); font-size: 13px; margin-top: 6px; }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.55);
+    }
+    @media (prefers-color-scheme: dark) { details { background: rgba(10,16,34,0.45); } }
+    details + details { margin-top: 10px; }
+    summary { cursor: pointer; font-weight: 700; }
+    summary::marker { color: var(--accent); }
+
+    footer {
+      margin-top: 18px;
+      padding: 14px 4px 0;
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;
+      color: var(--muted); font-size: 12px;
+    }
+    .footlinks { display: flex; gap: 14px; flex-wrap: wrap; }
+    .muted { color: var(--muted); }
   </style>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const lang =
-        (navigator.language || navigator.userLanguage || "").toLowerCase();
-      const isKorean = lang.startsWith("ko");
-
-      document.getElementById(
-        isKorean ? "content-ko" : "content-en"
-      ).style.display = "block";
-    });
-  </script>
 </head>
 
 <body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="mark">O</div>
+        <div>
+          <h1>OCRBook</h1>
+          <div class="tagline" data-i18n="brand_tagline">Read scanned books like real text.</div>
+        </div>
+      </div>
 
-  <!-- ================= English (Default) ================= -->
-  <div id="content-en" class="lang">
-    <h1>Screenshot (App) Maker</h1>
+      <nav aria-label="Primary">
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#quickstart" data-i18n="nav_quickstart">Quick Start</a>
+        <a href="#ollama" data-i18n="nav_ollama">Ollama Setup</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
 
-    <p>
-      <strong>Screenshot (App) Maker</strong> helps you create clean,
-      modern App Store screenshots effortlessly using flexible templates.
-    </p>
+      <div class="lang" aria-label="Language" data-lang-dropdown></div>
+    </header>
 
-    <h2>Key Features</h2>
-    <ul>
-      <li>Create stylish App Store screenshots using customizable templates</li>
-      <li>Import images from the Files app or your photo library</li>
-      <li>Support for iPhone, iPad, Apple Watch, and Apple TV screenshots</li>
-      <li>Add marketing text freely and adjust layout visually</li>
-    </ul>
+    <main class="card">
+      <section class="hero">
+        <div>
+          <h2 data-i18n="hero_title">Turn scanned PDFs into clean, searchable books.</h2>
+          <p data-i18n="hero_sub">
+            Import your scanned PDF, run OCR, then read it as real text — with page breaks and a layout that stays close to the original.
+          </p>
 
-    <h2>AI-Powered Localization</h2>
-    <p>
-      With Ollama AI integration, you can automatically generate
-      translated marketing text for different country codes,
-      making global App Store submissions fast and easy.
-    </p>
+          <div class="badges">
+            <span class="badge" data-i18n="badge_offline">Offline-friendly</span>
+            <span class="badge" data-i18n="badge_search">Fast search</span>
+            <span class="badge" data-i18n="badge_privacy">Privacy-first</span>
+          </div>
 
-    <h2>Privacy First</h2>
-    <p>
-      All editing and image generation are performed locally on your device.
-      The app does not collect personal data or track users.
-    </p>
+          <div class="actions">
+            <!-- Replace href with your App Store URL when ready -->
+            <a class="btn primary" href="#" aria-label="App Store">
+              <span></span>
+              <span data-i18n="cta_appstore">Get it on the App Store</span>
+            </a>
+            <a class="btn" href="#quickstart">
+              <span>⚡</span>
+              <span data-i18n="cta_guide">See the quick start</span>
+            </a>
+          </div>
+        </div>
 
-    <h2>Learn More</h2>
-    <p>
-      Read our <a href="./privacy.html">Privacy Policy</a>
-      to understand how we protect your data.
-    </p>
+        <aside class="panel" aria-label="Summary">
+          <h3 data-i18n="panel_title">What you get</h3>
+          <ul>
+            <li><span class="dot"></span><span data-i18n="panel_item_1">PDF & image import (Files / iCloud / Share Sheet)</span></li>
+            <li><span class="dot"></span><span data-i18n="panel_item_2">TXT view for comfortable reading</span></li>
+            <li><span class="dot"></span><span data-i18n="panel_item_3">Search, copy, and export OCR text</span></li>
+            <li><span class="dot"></span><span data-i18n="panel_item_4">Optional AI tools (local Ollama supported)</span></li>
+          </ul>
+        </aside>
+      </section>
 
-    <div class="footer">
-      © 2025 Screenshot (App) Maker
-    </div>
+      <section id="features">
+        <div class="sec-head">
+          <h3 data-i18n="sec_features_title">Key features</h3>
+          <div class="sec-sub" data-i18n="sec_features_sub">Everything you need to turn scanned books and documents into usable text.</div>
+        </div>
+
+        <div class="grid cols3">
+          <div class="feat">
+            <b data-i18n="f1_title">PDF & image import</b>
+            <p data-i18n="f1_body">Open from Files, iCloud Drive, or other apps. Keep everything organized in a simple library.</p>
+          </div>
+          <div class="feat">
+            <b data-i18n="f2_title">Page-aware OCR</b>
+            <p data-i18n="f2_body">Designed for long, multi-page scans. Keeps text aligned with each page for easy navigation.</p>
+          </div>
+          <div class="feat">
+            <b data-i18n="f3_title">TXT mode</b>
+            <p data-i18n="f3_body">Read as clean text with page breaks preserved — closer to an ebook, without losing context.</p>
+          </div>
+          <div class="feat">
+            <b data-i18n="f4_title">Search & copy</b>
+            <p data-i18n="f4_body">Jump to keywords instantly. Copy and share passages, or export the full OCR text.</p>
+          </div>
+          <div class="feat">
+            <b data-i18n="f5_title">TTS ready</b>
+            <p data-i18n="f5_body">Listen to long documents with system text-to-speech when enabled.</p>
+          </div>
+          <div class="feat">
+            <b data-i18n="f6_title">Private by design</b>
+            <p data-i18n="f6_body">Your files stay on device unless you choose to share or export. No ads, no tracking.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="quickstart">
+        <div class="sec-head">
+          <h3 data-i18n="sec_qs_title">Quick start</h3>
+          <div class="sec-sub" data-i18n="sec_qs_sub">From first launch to your first readable book in minutes.</div>
+        </div>
+
+        <div class="grid cols4">
+          <div class="step">
+            <span class="kicker">Step 1</span>
+            <strong data-i18n="step1_title">Import a scanned PDF</strong>
+            <p data-i18n="step1_body">Tap Import and select a PDF from Files, iCloud Drive, or Share Sheet.</p>
+          </div>
+          <div class="step">
+            <span class="kicker">Step 2</span>
+            <strong data-i18n="step2_title">Run OCR (all pages or a range)</strong>
+            <p data-i18n="step2_body">Choose full book OCR or only selected pages. Processing runs as efficiently as possible.</p>
+          </div>
+          <div class="step">
+            <span class="kicker">Step 3</span>
+            <strong data-i18n="step3_title">Switch to TXT view</strong>
+            <p data-i18n="step3_body">Tap TXT to read reconstructed text while keeping page breaks familiar.</p>
+          </div>
+          <div class="step">
+            <span class="kicker">Step 4</span>
+            <strong data-i18n="step4_title">Search & reuse</strong>
+            <p data-i18n="step4_body">Search for keywords, copy passages, and export text for notes or other tools.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ollama">
+        <div class="sec-head">
+          <h3 data-i18n="sec_ollama_title">Local AI with Ollama (optional)</h3>
+          <div class="sec-sub" data-i18n="sec_ollama_sub">Prefer local processing? Connect OCRBook to your own Ollama server.</div>
+        </div>
+
+        <div class="grid">
+          <div class="feat">
+            <p class="muted" data-i18n="ollama_body">
+              Use Ollama to summarize, translate, or ask questions — while keeping content on your own machine. If you connect over plain HTTP, traffic may not be encrypted. Use a trusted network or HTTPS where possible.
+            </p>
+            <div style="margin-top:12px;">
+              <a class="btn primary" href="./ollamasetuptutorial.html">
+                <span>🦙</span>
+                <span data-i18n="ollama_btn">Open Ollama setup tutorial</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="sec-head">
+          <h3 data-i18n="sec_faq_title">FAQ</h3>
+          <div class="sec-sub"> </div>
+        </div>
+
+        <details>
+          <summary data-i18n="faq1_q">Does OCRBook modify my original PDF?</summary>
+          <div class="muted" style="margin-top:10px;" data-i18n="faq1_a">No. Your original file stays untouched. OCR text is stored separately and you can switch between views anytime.</div>
+        </details>
+
+        <details>
+          <summary data-i18n="faq2_q">Does it work offline?</summary>
+          <div class="muted" style="margin-top:10px;" data-i18n="faq2_a">Yes. OCR and reading work offline. Optional integrations may require a network connection if you enable them.</div>
+        </details>
+
+        <details>
+          <summary data-i18n="faq3_q">Can I export the OCR text?</summary>
+          <div class="muted" style="margin-top:10px;" data-i18n="faq3_a">Yes. Copy passages, share selected text, or export the full OCR result as a plain text file.</div>
+        </details>
+      </section>
+
+      <footer>
+        <div>© <span id="year"></span> OCRBook. J-Apps. <span data-i18n="footer_rights">All rights reserved.</span></div>
+        <div class="footlinks">
+          <a href="./privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer_support">Support</a>
+          <a href="#" data-i18n="footer_appstore">App Store</a>
+          <a href="./ollamasetuptutorial.html">Ollama</a>
+        </div>
+      </footer>
+    </main>
   </div>
 
-  <!-- ================= Korean ================= -->
-  <div id="content-ko" class="lang">
-    <h1>Screenshot (App) Maker</h1>
-
-    <p>
-      <strong>Screenshot (App) Maker</strong>는
-      템플릿을 활용해 세련된 App Store 스크린샷을
-      쉽고 빠르게 제작할 수 있는 앱입니다.
-    </p>
-
-    <h2>주요 기능</h2>
-    <ul>
-      <li>템플릿 기반으로 깔끔한 앱스토어 스크린샷 제작</li>
-      <li>Files 앱 또는 사진 앨범에서 이미지 불러오기</li>
-      <li>iPhone, iPad, Apple Watch, Apple TV 스크린샷 지원</li>
-      <li>문구 추가 및 레이아웃 자유 편집</li>
-    </ul>
-
-    <h2>AI 자동 번역</h2>
-    <p>
-      Ollama AI 연동을 통해,
-      원하는 국가 코드에 맞는 마케팅 문구를
-      자동으로 생성하고 번역할 수 있습니다.
-      글로벌 앱 배포를 간편하게 만들어줍니다.
-    </p>
-
-    <h2>개인정보 보호</h2>
-    <p>
-      모든 이미지 편집과 생성 작업은
-      사용자의 기기 내에서만 수행됩니다.
-      앱은 개인정보를 수집하거나 추적하지 않습니다.
-    </p>
-
-    <h2>자세히 알아보기</h2>
-    <p>
-      개인정보 처리 방식은
-      <a href="./privacy.html">개인정보 처리방침</a>에서 확인할 수 있습니다.
-    </p>
-
-    <div class="footer">
-      © 2025 Screenshot (App) Maker
-    </div>
-  </div>
-
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="./i18n.js"></script>
 </body>
 </html>
