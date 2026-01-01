@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Criador de Capturas de Ecrã (App)",
-    "description": "Crie capturas de ecrã da App Store limpas e modernas sem esforço, utilizando modelos flexíveis.",
+    "description": "Crie capturas de ecrã da App Store elegantes e modernas sem esforço, utilizando modelos flexíveis.",
     "languageName": "English"
   },
   "nav": {
@@ -16,31 +16,31 @@
   },
   "home": {
     "brandTitle": "Criador de Capturas de Ecrã (App)",
-    "brandSubtitle": "Capturas de ecrã da App Store, facilitadas.",
+    "brandSubtitle": "Capturas de ecrã da App Store, simplificadas.",
     "heroTitle": "Crie capturas de ecrã da App Store em minutos",
-    "heroBody": "Escolha 3–5 capturas de ecrã, coloque-as em modelos, adicione texto de marketing e exporte imagens prontas para upload.",
-    "featuresTitle": "Principais Características",
+    "heroBody": "Escolha 3–5 capturas de ecrã, insira-as em modelos, adicione texto de marketing e exporte imagens prontas para carregar.",
+    "featuresTitle": "Principais Recursos",
     "features": [
-      "Crie capturas de ecrã da App Store elegantes utilizando modelos personalizáveis",
-      "Importe imagens da aplicação Ficheiros ou da sua biblioteca de fotografias",
+      "Crie capturas de ecrã elegantes da App Store utilizando modelos personalizáveis",
+      "Importe imagens da app Ficheiros ou da sua biblioteca de fotos",
       "Suporte para capturas de ecrã de iPhone, iPad, Apple Watch e Apple TV",
       "Adicione texto de marketing livremente e ajuste o layout visualmente"
     ],
-    "aiTitle": "Localização com IA",
+    "aiTitle": "Localização Alimentada por IA",
     "aiBody": "Com a integração do Ollama, gere texto de marketing traduzido por código de país para submissões globais rápidas.",
     "aiLink": "Abrir o tutorial de configuração do Ollama →",
     "privacyTitle": "Privacidade em Primeiro Lugar",
-    "privacyBody": "Edição e geração de imagens acontecem localmente. Sem rastreamento. Sem análises. Sem anúncios.",
+    "privacyBody": "A edição e a geração de imagens acontecem localmente. Sem rastreamento. Sem análises. Sem anúncios.",
     "learnTitle": "Saiba Mais",
     "learnBody": "Leia a nossa Política de Privacidade para entender como protegemos os seus dados.",
     "learnLink": "Política de Privacidade →",
     "footerNote": "Dica: adicione <code>?lang=ko</code> (ou qualquer código suportado) à URL para pré-visualizar um idioma.",
     "supportedPill": "Suporta iPhone · iPad · Watch · TV",
-    "copyright": "© 2026 Screenshot (App) Maker"
+    "copyright": "© 2026 Criador de Capturas de Ecrã (App)"
   },
   "ollama": {
     "title": "Tutorial de Configuração do Ollama",
-    "subtitle": "Conecte o Screenshot (App) Maker à sua própria instância do Ollama para tradução e geração de texto com IA.",
+    "subtitle": "Conecte o Criador de Capturas de Ecrã (App) à sua própria instância do Ollama para tradução e geração de texto com IA.",
     "requirementsTitle": "O que precisa",
     "requirements": [
       "Um Mac, PC Windows ou máquina Linux para executar o Ollama",
@@ -49,18 +49,72 @@
     ],
     "stepsTitle": "Step-by-step",
     "steps": [
-      "<strong>Instale o Ollama</strong>: descarregue e instale o Ollama para o seu SO.",
-      "<strong>Inicie o Ollama</strong>: execute <code>ollama serve</code> (ou abra a aplicação Ollama no macOS).",
-      "<strong>Obtenha um modelo</strong>: execute <code>ollama pull llama3.2</code> (ou o seu modelo preferido).",
-      "<strong>Confirme se funciona</strong>: execute <code>ollama run llama3.2</code> e teste um pedido.",
-      "<strong>Encontre o endereço do seu servidor</strong>: anote o IP LAN do seu computador (por exemplo, <code>192.168.0.10</code>).",
-      "<strong>Use-o na aplicação</strong>: nas definições do Screenshot (App) Maker, defina Host para <code>http://&lt;LAN-IP&gt;:11434</code>."
+      "<strong>Instalar o Ollama</strong>: transfira e instale o Ollama para o seu SO.",
+      "<strong>Iniciar o Ollama</strong>: execute <code>ollama serve</code> (ou abra a aplicação Ollama no macOS).",
+      "<strong>Obter um modelo</strong>: execute <code>ollama pull llama3.2</code> (ou o seu modelo preferido).",
+      "<strong>Confirmar se funciona</strong>: execute <code>ollama run llama3.2</code> e teste um pedido.",
+      "<strong>Encontre o seu endereço de servidor</strong>: anote o endereço IP LAN do seu computador (por exemplo, <code>192.168.0.10</code>).",
+      "<strong>Utilize-o na aplicação</strong>: nas definições do Screenshot (App) Maker, defina o Anfitrião como <code>http://&lt;LAN-IP&gt;:11434</code>."
     ],
     "notesTitle": "Notas e resolução de problemas",
     "notes": [
-      "Se a aplicação não conseguir ligar-se, verifique se o seu telemóvel e computador estão na mesma rede Wi‑Fi.",
-      "Certifique-se de que a porta <code>11434</code> está autorizada pelo seu firewall.",
-      "Se preferir usar um servidor remoto (PC doméstico, VPS), deve expor a porta com segurança (VPN recomendada)."
+      "Se a aplicação não conseguir ligar-se, verifique se o seu telemóvel e o seu computador estão na mesma rede Wi‑Fi.",
+      "Certifique-se de que a porta <code>11434</code> está permitida pelo seu firewall.",
+      "Se preferir utilizar um servidor remoto (PC doméstico, VPS), tem de expor a porta com segurança (VPN recomendada)."
+    ],
+    "backHome": "← Voltar à Página Inicial",
+    "metaTitle": "Tutorial de Configuração do Ollama — Screenshot (App) Maker"
+  },
+  "privacy": {
+    "metaTitle": "Política de Privacidade — Screenshot (App) Maker",
+    "title": "Política de Privacidade",
+    "intro": "Esta Política de Privacidade descreve como o Screenshot (App) Maker (\"a Aplicação\") processa os dados do utilizador.",
+    "summaryTitle": "Summary",
+    "summary": [
+      "Sem contas. Sem análise. Sem rastreamento.",
+      "Os seus ficheiros e edições permanecem no seu dispositivo, a menos que escolha ligar-se ao seu próprio servidor Ollama.",
+      "Se utilizar o Ollama, o texto é enviado apenas para o endereço do servidor que configurar."
+    ],
+    "sections": [
+      {
+        "title": "Recolha de Informações",
+        "body": [
+          "A Aplicação não recolhe, armazena ou transmite informações pessoais para os nossos servidores.",
+          "As capturas de ecrã, os modelos e as imagens exportadas são criadas e guardadas localmente no seu dispositivo."
+        ]
+      },
+      {
+        "title": "Acesso a Ficheiros e Fotografias",
+        "body": [
+          "A Aplicação pode solicitar acesso à aplicação Ficheiros ou à sua biblioteca de fotografias para importar capturas de ecrã.",
+          "As imagens importadas são processadas no dispositivo e não são carregadas automaticamente."
+        ]
+      },
+      {
+        "title": "Tradução com IA (Ollama)",
+        "body": [
+          "Se ativar a geração ou tradução de texto com IA, a Aplicação pode enviar texto para um servidor Ollama que configurar (por exemplo, o seu próprio computador).",
+          "Não operamos nem recebemos o seu tráfego Ollama e a Aplicação não regista nem armazena o texto processado pela IA."
+        ]
+      },
+      {
+        "title": "Serviços de Terceiros",
+        "body": [
+          "A Aplicação não utiliza análises de terceiros, SDKs de publicidade ou tecnologias de rastreamento."
+        ]
+      },
+      {
+        "title": "Changes",
+        "body": [
+          "Podemos atualizar esta Política de Privacidade de tempos a tempos. As alterações serão refletidas nesta página."
+        ]
+      },
+      {
+        "title": "Contact",
+        "body": [
+          "Se tiver dúvidas sobre esta Política de Privacidade, entre em contacto connosco através do endereço de e-mail fornecido na listagem da App Store."
+        ]
+      }
     ],
     "backHome": "← Voltar à Página Inicial"
   }

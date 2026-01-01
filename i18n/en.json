@@ -62,6 +62,60 @@
       "Make sure port <code>11434</code> is allowed by your firewall.",
       "If you prefer to use a remote server (home PC, VPS), you must expose the port securely (VPN recommended)."
     ],
+    "backHome": "← Back to Home",
+    "metaTitle": "Ollama Setup Tutorial — Screenshot (App) Maker"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy — Screenshot (App) Maker",
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy describes how Screenshot (App) Maker (\"the App\") handles user data.",
+    "summaryTitle": "Summary",
+    "summary": [
+      "No accounts. No analytics. No tracking.",
+      "Your files and edits stay on your device unless you choose to connect to your own Ollama server.",
+      "If you use Ollama, text is sent only to the server address you configure."
+    ],
+    "sections": [
+      {
+        "title": "Information Collection",
+        "body": [
+          "The App does not collect, store, or transmit personal information to our servers.",
+          "Screenshots, templates, and exported images are created and saved locally on your device."
+        ]
+      },
+      {
+        "title": "Files and Photos Access",
+        "body": [
+          "The App may request access to the Files app or your photo library to import screenshots.",
+          "Imported images are processed on-device and are not uploaded automatically."
+        ]
+      },
+      {
+        "title": "AI Translation (Ollama)",
+        "body": [
+          "If you enable AI text generation or translation, the App can send text to an Ollama server that you configure (for example, your own computer).",
+          "We do not operate or receive your Ollama traffic, and the App does not log or store the text processed by AI."
+        ]
+      },
+      {
+        "title": "Third-Party Services",
+        "body": [
+          "The App does not use third-party analytics, advertising SDKs, or tracking technologies."
+        ]
+      },
+      {
+        "title": "Changes",
+        "body": [
+          "We may update this Privacy Policy from time to time. Changes will be reflected on this page."
+        ]
+      },
+      {
+        "title": "Contact",
+        "body": [
+          "If you have questions about this Privacy Policy, please contact us via the email address provided on the App Store listing."
+        ]
+      }
+    ],
     "backHome": "← Back to Home"
   }
 }
