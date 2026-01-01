@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Ekran Görüntüsü (Uygulama) Oluşturucu",
+    "description": "Esnek şablonlar kullanarak temiz, modern App Store ekran görüntülerini zahmetsizce oluşturun.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Ollama Kurulumu Eğitimi",
+    "privacy": "Gizlilik Politikası"
+  },
+  "langPicker": {
+    "title": "Bir dil seçin",
+    "close": "Close",
+    "hint": "Eksik çeviriler? <code>./i18n/&lt;code&gt;.json</code> (aynı anahtarlar <code>en.json</code> gibi) oluşturun."
+  },
+  "home": {
+    "brandTitle": "Ekran Görüntüsü (Uygulama) Oluşturucu",
+    "brandSubtitle": "App Store ekran görüntüleri, kolaylaştırıldı.",
+    "heroTitle": "Dakikalar İçinde App Store Ekran Görüntüleri Oluşturun",
+    "heroBody": "3–5 ekran görüntüsü seçin, şablonlara bırakın, pazarlama metni ekleyin ve yüklemeye hazır görüntüleri dışa aktarın.",
+    "featuresTitle": "Temel Özellikler",
+    "features": [
+      "Özelleştirilebilir şablonlar kullanarak şık App Store ekran görüntüleri oluşturun",
+      "Dosyalar uygulamasından veya fotoğraf kitaplığınızdan resimleri içe aktarın",
+      "iPhone, iPad, Apple Watch ve Apple TV ekran görüntüleri için destek",
+      "Pazarlama metnini serbestçe ekleyin ve düzeni görsel olarak ayarlayın"
+    ],
+    "aiTitle": "AI Destekli Yerelleştirme",
+    "aiBody": "Ollama entegrasyonu ile ülke kodu başına çevrilmiş pazarlama metni oluşturarak hızlı küresel gönderimler yapın.",
+    "aiLink": "Ollama kurulumu eğitimini açın →",
+    "privacyTitle": "Öncelikle Gizlilik",
+    "privacyBody": "Düzenleme ve resim oluşturma yerel olarak gerçekleşir. İzleme yok. Analitik yok. Reklam yok.",
+    "learnTitle": "Daha Fazla Bilgi Edinin",
+    "learnBody": "Verilerinizi nasıl koruduğumuzu anlamak için Gizlilik Politikamızı okuyun.",
+    "learnLink": "Gizlilik Politikası →",
+    "footerNote": "İpucu: URL'ye <code>?lang=ko</code> (veya desteklenen herhangi bir kod) ekleyerek bir yerel ayarı önizlemek için ekleyin.",
+    "supportedPill": "iPhone · iPad · Watch · TV'yi Destekler",
+    "copyright": "© 2026 Ekran Görüntüsü (Uygulama) Yapımcısı"
+  },
+  "ollama": {
+    "title": "Ollama Kurulum Eğitimi",
+    "subtitle": "Yapay zeka çevirisi ve metin oluşturma için Ekran Görüntüsü (Uygulama) Yapımcısı'nı kendi Ollama örneğinize bağlayın.",
+    "requirementsTitle": "İhtiyacınız Olanlar",
+    "requirements": [
+      "Ollama'yı çalıştırmak için bir Mac, Windows PC veya Linux makinesi",
+      "Ollama'nın yüklü ve çalışır durumda olması",
+      "iPhone/iPad'inizin Ollama makinesiyle aynı ağda olması (önerilir)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Ollama'yı Yükleyin</strong>: Ollama'yı işletim sisteminiz için indirin ve yükleyin.",
+      "<strong>Ollama'yı Başlatın</strong>: <code>ollama serve</code> komutunu çalıştırın (veya macOS'ta Ollama uygulamasını açın).",
+      "<strong>Bir model çekin</strong>: <code>ollama pull llama3.2</code> (veya tercih ettiğiniz model) komutunu çalıştırın.",
+      "<strong>Çalıştığını Doğrulayın</strong>: <code>ollama run llama3.2</code> komutunu çalıştırın ve bir istemle test edin.",
+      "<strong>Sunucu adresinizi bulun</strong>: bilgisayarınızın LAN IP adresini not edin (örneğin <code>192.168.0.10</code>).",
+      "<strong>Uygulamada kullanın</strong>: Ekran Görüntüsü (Uygulama) Yapımcısı ayarlarında Host'u <code>http://&lt;LAN-IP&gt;:11434</code> olarak ayarlayın."
+    ],
+    "notesTitle": "Notlar ve sorun giderme",
+    "notes": [
+      "Uygulama bağlanamıyorsa, telefonunuzun ve bilgisayarınızın aynı Wi‑Fi ağına bağlı olduğundan emin olun.",
+      "<code>11434</code> numaralı bağlantı noktasının güvenlik duvarınız tarafından izin verildiğinden emin olun.",
+      "Uzak bir sunucu (ev PC'si, VPS) kullanmayı tercih ederseniz, bağlantı noktasını güvenli bir şekilde açmanız gerekir (VPN önerilir)."
+    ],
+    "backHome": "← Ana Sayfaya Geri Dön"
+  }
+}

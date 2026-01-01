@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Kuvakaappaus (Sovellus) Valmistaja",
+    "description": "Luo puhtaita, moderneja App Store -kuvakaappauksia vaivattomasti joustavien mallien avulla.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Ollama Asennusopas",
+    "privacy": "Tietosuojakäytäntö"
+  },
+  "langPicker": {
+    "title": "Valitse kieli",
+    "close": "Close",
+    "hint": "Puuttuvat käännökset? Luo <code>./i18n/&lt;code&gt;.json</code> (samat avaimet kuin <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Kuvakaappaus (Sovellus) Valmistaja",
+    "brandSubtitle": "App Store -kuvakaappaukset, tehty helpoksi.",
+    "heroTitle": "Tee App Store -kuvakaappauksia minuuteissa",
+    "heroBody": "Valitse 3–5 kuvakaappausta, pudota ne malleihin, lisää markkinointitekstiä ja vie valmiit kuvat ladattavaksi.",
+    "featuresTitle": "Tärkeimmät ominaisuudet",
+    "features": [
+      "Luo tyylikkäitä App Store -kuvakaappauksia muokattavien mallien avulla",
+      "Tuo kuvia Tiedostot-sovelluksesta tai valokuvakirjastostasi",
+      "Tukee iPhone-, iPad-, Apple Watch- ja Apple TV -kuvakaappauksia",
+      "Lisää markkinointitekstiä vapaasti ja säädä asettelua visuaalisesti"
+    ],
+    "aiTitle": "AI-pohjainen lokalisointi",
+    "aiBody": "Ollama-integraation avulla luo käännettyä markkinointitekstiä maakohtaisesti nopeita maailmanlaajuisia lähetysten varten.",
+    "aiLink": "Avaa Ollama-asennusopas →",
+    "privacyTitle": "Yksityisyys etusijalla",
+    "privacyBody": "Muokkaus ja kuvien luonti tapahtuvat paikallisesti. Ei seurantaa. Ei analytiikkaa. Ei mainoksia.",
+    "learnTitle": "Lisätietoja",
+    "learnBody": "Lue Tietosuojakäytäntömme ymmärtääksesi, miten suojaamme tietosi.",
+    "learnLink": "Tietosuojakäytäntö →",
+    "footerNote": "Vinkki: lisää <code>?lang=ko</code> (tai mikä tahansa tuettu koodi) URL-osoitteeseen nähdäksesi paikallisen version esikatselun.",
+    "supportedPill": "Tukee iPhonea · iPadia · Watchia · TV:tä",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Ollama-asennusopas",
+    "subtitle": "Yhdistä Screenshot (App) Maker omaan Ollama-instanssiisi tekoälypohjaisen käännöksen ja tekstin luomisen mahdollistamiseksi.",
+    "requirementsTitle": "Tarvitset",
+    "requirements": [
+      "Mac-, Windows-PC- tai Linux-kone Ollaman suorittamiseen",
+      "Asennettu ja käynnissä oleva Ollama",
+      "iPhone/iPad samassa verkossa kuin Ollama-kone (suositus)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Asenna Ollama</strong>: lataa ja asenna Ollama käyttöjärjestelmääsi.",
+      "<strong>Käynnistä Ollama</strong>: suorita <code>ollama serve</code> (tai avaa Ollama-sovellus macOS:ssä).",
+      "<strong>Lataa malli</strong>: suorita <code>ollama pull llama3.2</code> (tai haluamasi malli).",
+      "<strong>Varmista toimivuus</strong>: suorita <code>ollama run llama3.2</code> ja testaa kehote.",
+      "<strong>Etsi palvelinosoite</strong>: merkitse tietokoneesi lähiverkon IP-osoite (esim. <code>192.168.0.10</code>).",
+      "<strong>Käytä sovelluksessa</strong>: määritä Screenshot (App) Maker -asetuksissa Host <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Huomautuksia ja vianetsintä",
+    "notes": [
+      "Jos sovellus ei voi muodostaa yhteyttä, tarkista, että puhelimesi ja tietokoneesi ovat samassa Wi-Fi-verkossa.",
+      "Varmista, että palomuuri sallii portin <code>11434</code>.",
+      "Jos haluat käyttää etäpalvelinta (kotitietokone, VPS), sinun on paljastettava portti turvallisesti (VPN suositus)."
+    ],
+    "backHome": "← Takaisin etusivulle"
+  }
+}

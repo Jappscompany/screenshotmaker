@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Képernyőképszelő (App) Készítő",
+    "description": "Készítsen egyszerűen tiszta, modern App Store képernyőképeket rugalmas sablonokkal.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Ollama Beállítási Oktatóanyag",
+    "privacy": "Adatvédelmi szabályzat"
+  },
+  "langPicker": {
+    "title": "Nyelv kiválasztása",
+    "close": "Close",
+    "hint": "Hiányzó fordítások? Hozzon létre <code>./i18n/&lt;code&gt;.json</code> fájlt (ugyanazokkal a kulcsokkal, mint a <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Képernyőképszelő (App) Készítő",
+    "brandSubtitle": "App Store képernyőképek egyszerűen.",
+    "heroTitle": "Készítsen App Store képernyőképeket percek alatt",
+    "heroBody": "Válasszon ki 3–5 képernyőképet, helyezze el sablonokban, adjon hozzá marketing szöveget, és exportáljon kész képeket feltöltéshez.",
+    "featuresTitle": "Főbb funkciók",
+    "features": [
+      "Stílusos App Store képernyőképek készítése testreszabható sablonokkal",
+      "Képek importálása a Fájlok alkalmazásból vagy a fotótárból",
+      "Támogatás iPhone, iPad, Apple Watch és Apple TV képernyőképekhez",
+      "Marketing szöveg szabad hozzáadása és elrendezés vizuális beállítása"
+    ],
+    "aiTitle": "AI-alapú lokalizáció",
+    "aiBody": "Az Ollama integrációval országkódonként generálhat fordított marketing szöveget a gyors globális benyújtásokhoz.",
+    "aiLink": "Nyissa meg az Ollama beállítási oktatóanyagot →",
+    "privacyTitle": "Először is a magánélet",
+    "privacyBody": "A szerkesztés és a képalkotás helyben történik. Nincs nyomkövetés. Nincs elemzés. Nincs hirdetés.",
+    "learnTitle": "Tudjon meg többet",
+    "learnBody": "Olvassa el adatvédelmi szabályzatunkat, hogy megértse, hogyan védjük az adatait.",
+    "learnLink": "Adatvédelmi szabályzat →",
+    "footerNote": "Tipp: fűzd hozzá a <code>?lang=ko</code> (vagy bármely támogatott kódot) az URL-hez, hogy megtekinthesd a helyi változatot.",
+    "supportedPill": "Támogatja az iPhone-t · iPad-et · Watch-ot · TV-t",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Ollama beállítási útmutató",
+    "subtitle": "Csatlakoztasd a Screenshot (App) Maker-t a saját Ollama példányodhoz az AI fordításhoz és a szöveg generáláshoz.",
+    "requirementsTitle": "Szükséges feltételek",
+    "requirements": [
+      "Számítógép (Mac, Windows PC vagy Linux) az Ollama futtatásához",
+      "Telepített és futó Ollama",
+      "iPhone/iPad ugyanazon a hálózaton, mint a Ollama gépe (ajánlott)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Ollama telepítése</strong>: töltsd le és telepítsd az Ollamát az operációs rendszeredhez.",
+      "<strong>Ollama indítása</strong>: futtasd a <code>ollama serve</code> parancsot (vagy nyisd meg az Ollama alkalmazást macOS-en).",
+      "<strong>Modell letöltése</strong>: futtasd a <code>ollama pull llama3.2</code> parancsot (vagy a kívánt modellt).",
+      "<strong>Ellenőrizd, hogy működik-e</strong>: futtasd a <code>ollama run llama3.2</code> parancsot, és tesztelj egy parancssort.",
+      "<strong>Keresd meg a szerver címét</strong>: jegyezd fel a számítógéped LAN IP-címét (pl. <code>192.168.0.10</code>).",
+      "<strong>Használd az alkalmazásban</strong>: a Screenshot (App) Maker beállításaiban állítsd a Host-ot <code>http://&lt;LAN-IP&gt;:11434</code>-re."
+    ],
+    "notesTitle": "Megjegyzések és hibaelhárítás",
+    "notes": [
+      "Ha az alkalmazás nem tud csatlakozni, ellenőrizd, hogy a telefonod és a számítógéped ugyanazon a Wi-Fi hálózaton van-e.",
+      "Győződj meg arról, hogy a <code>11434</code> port engedélyezve van a tűzfalban.",
+      "Ha inkább egy távoli szervert szeretnél használni (otthoni PC, VPS), akkor biztonságosan kell kitenni a portot (VPN ajánlott)."
+    ],
+    "backHome": "← Vissza a Főoldalra"
+  }
+}

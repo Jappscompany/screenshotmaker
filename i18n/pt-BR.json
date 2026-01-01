@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Criador de Capturas de Tela (App)",
+    "description": "Crie capturas de tela da App Store limpas e modernas sem esforço, usando modelos flexíveis.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Tutorial de Configuração do Ollama",
+    "privacy": "Política de Privacidade"
+  },
+  "langPicker": {
+    "title": "Escolha um idioma",
+    "close": "Close",
+    "hint": "Faltam traduções? Crie <code>./i18n/&lt;code&gt;.json</code> (as mesmas chaves de <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Criador de Capturas de Tela (App)",
+    "brandSubtitle": "Capturas de tela da App Store, simplificado.",
+    "heroTitle": "Crie capturas de tela da App Store em minutos",
+    "heroBody": "Escolha de 3 a 5 capturas de tela, adicione-as a modelos, adicione texto de marketing e exporte imagens prontas para upload.",
+    "featuresTitle": "Principais Recursos",
+    "features": [
+      "Crie capturas de tela da App Store elegantes usando modelos personalizáveis",
+      "Importe imagens do aplicativo Arquivos ou de sua biblioteca de fotos",
+      "Suporte para capturas de tela de iPhone, iPad, Apple Watch e Apple TV",
+      "Adicione texto de marketing livremente e ajuste o layout visualmente"
+    ],
+    "aiTitle": "Localização com IA",
+    "aiBody": "Com a integração do Ollama, gere texto de marketing traduzido por código de país para envios globais rápidos.",
+    "aiLink": "Abrir o tutorial de configuração do Ollama →",
+    "privacyTitle": "Privacidade em Primeiro Lugar",
+    "privacyBody": "Edição e geração de imagens acontecem localmente. Sem rastreamento. Sem análise. Sem anúncios.",
+    "learnTitle": "Saiba Mais",
+    "learnBody": "Leia nossa Política de Privacidade para entender como protegemos seus dados.",
+    "learnLink": "Política de Privacidade →",
+    "footerNote": "Dica: adicione <code>?lang=ko</code> (ou qualquer código suportado) à URL para visualizar um locale.",
+    "supportedPill": "Suporta iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Tutorial de Configuração do Ollama",
+    "subtitle": "Conecte o Screenshot (App) Maker à sua própria instância Ollama para tradução e geração de texto com IA.",
+    "requirementsTitle": "O que você precisa",
+    "requirements": [
+      "Um Mac, PC Windows ou máquina Linux para executar o Ollama",
+      "Ollama instalado e em execução",
+      "Seu iPhone/iPad na mesma rede que a máquina Ollama (recomendado)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Instale o Ollama</strong>: baixe e instale o Ollama para seu SO.",
+      "<strong>Inicie o Ollama</strong>: execute <code>ollama serve</code> (ou abra o aplicativo Ollama no macOS).",
+      "<strong>Puxe um modelo</strong>: execute <code>ollama pull llama3.2</code> (ou o modelo de sua preferência).",
+      "<strong>Confirme se funciona</strong>: execute <code>ollama run llama3.2</code> e teste um prompt.",
+      "<strong>Encontre o endereço do seu servidor</strong>: anote o IP LAN do seu computador (por exemplo, <code>192.168.0.10</code>).",
+      "<strong>Use no aplicativo</strong>: nas configurações do Screenshot (App) Maker), defina Host para <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Notas e solução de problemas",
+    "notes": [
+      "Se o aplicativo não conseguir se conectar, verifique se seu telefone e computador estão na mesma rede Wi‑Fi.",
+      "Certifique-se de que a porta <code>11434</code> seja permitida pelo seu firewall.",
+      "Se você preferir usar um servidor remoto (PC doméstico, VPS), deverá expor a porta com segurança (VPN recomendada)."
+    ],
+    "backHome": "← Voltar para Início"
+  }
+}

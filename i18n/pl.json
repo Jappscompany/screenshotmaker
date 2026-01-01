@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Twórca zrzutów ekranu (App)",
+    "description": "Twórz czyste, nowoczesne zrzuty ekranu Sklepu App bez wysiłku, korzystając z elastycznych szablonów.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Samouczek konfiguracji Ollama",
+    "privacy": "Polityka prywatności"
+  },
+  "langPicker": {
+    "title": "Wybierz język",
+    "close": "Close",
+    "hint": "Brak tłumaczeń? Utwórz <code>./i18n/&lt;code&gt;.json</code> (te same klucze co <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Twórca zrzutów ekranu (App)",
+    "brandSubtitle": "Zrzuty ekranu Sklepu App, łatwo zrobione.",
+    "heroTitle": "Twórz zrzuty ekranu Sklepu App w kilka minut",
+    "heroBody": "Wybierz 3–5 zrzutów ekranu, umieść je w szablonach, dodaj tekst marketingowy i eksportuj gotowe do przesłania obrazy.",
+    "featuresTitle": "Kluczowe funkcje",
+    "features": [
+      "Twórz stylowe zrzuty ekranu Sklepu App, korzystając z konfigurowalnych szablonów",
+      "Importuj obrazy z aplikacji Pliki lub biblioteki zdjęć",
+      "Obsługa zrzutów ekranu dla iPhone'a, iPada, Apple Watch i Apple TV",
+      "Dodawaj tekst marketingowy swobodnie i dostosowuj układ wizualnie"
+    ],
+    "aiTitle": "Lokalizacja oparta na sztucznej inteligencji",
+    "aiBody": "Dzięki integracji z Ollama, generuj przetłumaczony tekst marketingowy dla każdego kodu kraju, aby szybko wprowadzać oferty na całym świecie.",
+    "aiLink": "Otwórz samouczek konfiguracji Ollama →",
+    "privacyTitle": "Prywatność przede wszystkim",
+    "privacyBody": "Edycja i generowanie obrazów odbywa się lokalnie. Brak śledzenia. Brak analiz. Brak reklam.",
+    "learnTitle": "Dowiedz się więcej",
+    "learnBody": "Przeczytaj naszą Politykę prywatności, aby dowiedzieć się, jak chronimy Twoje dane.",
+    "learnLink": "Polityka prywatności →",
+    "footerNote": "Wskazówka: dołącz <code>?lang=ko</code> (lub dowolny obsługiwany kod) do adresu URL, aby zobaczyć podgląd lokalizacji.",
+    "supportedPill": "Obsługuje iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Samouczek konfiguracji Ollama",
+    "subtitle": "Połącz Screenshot (App) Maker z własną instancją Ollama, aby korzystać z tłumaczenia AI i generowania tekstu.",
+    "requirementsTitle": "Co jest potrzebne",
+    "requirements": [
+      "Komputer Mac, PC z systemem Windows lub Linux do uruchomienia Ollama",
+      "Zainstalowany i uruchomiony Ollama",
+      "iPhone/iPad w tej samej sieci co komputer z Ollama (zalecane)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Zainstaluj Ollama</strong>: pobierz i zainstaluj Ollama dla swojego systemu operacyjnego.",
+      "<strong>Uruchom Ollama</strong>: uruchom <code>ollama serve</code> (lub otwórz aplikację Ollama na macOS).",
+      "<strong>Pobierz model</strong>: uruchom <code>ollama pull llama3.2</code> (lub preferowany model).",
+      "<strong>Sprawdź, czy działa</strong>: uruchom <code>ollama run llama3.2</code> i przetestuj podpowiedź.",
+      "<strong>Znajdź adres serwera</strong>: zanotuj adres IP LAN swojego komputera (np. <code>192.168.0.10</code>).",
+      "<strong>Użyj go w aplikacji</strong>: w ustawieniach Screenshot (App) Maker ustaw Host na <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Uwagi i rozwiązywanie problemów",
+    "notes": [
+      "Jeśli aplikacja nie może się połączyć, sprawdź, czy telefon i komputer znajdują się w tej samej sieci Wi-Fi.",
+      "Upewnij się, że port <code>11434</code> jest dozwolony przez zaporę ogniową.",
+      "Jeśli wolisz używać zdalnego serwera (komputer domowy, VPS), musisz bezpiecznie udostępnić port (zalecana sieć VPN)."
+    ],
+    "backHome": "← Powrót do strony głównej"
+  }
+}

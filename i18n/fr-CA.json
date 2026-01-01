@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Créateur de captures d’écran (App)",
+    "description": "Créez facilement des captures d’écran de l’App Store propres et modernes grâce à des modèles flexibles.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Tutoriel de configuration d’Ollama",
+    "privacy": "Politique de confidentialité"
+  },
+  "langPicker": {
+    "title": "Choisissez une langue",
+    "close": "Close",
+    "hint": "Des traductions manquantes ? Créez <code>./i18n/&lt;code&gt;.json</code> (mêmes clés que <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Créateur de captures d’écran (App)",
+    "brandSubtitle": "Captures d’écran de l’App Store, simplifiées.",
+    "heroTitle": "Créez des captures d’écran de l’App Store en quelques minutes",
+    "heroBody": "Sélectionnez 3 à 5 captures d’écran, insérez-les dans des modèles, ajoutez du texte marketing et exportez des images prêtes à être téléchargées.",
+    "featuresTitle": "Fonctionnalités clés",
+    "features": [
+      "Créez des captures d’écran élégantes pour l’App Store à l’aide de modèles personnalisables",
+      "Importez des images à partir de l’application Fichiers ou de votre photothèque",
+      "Prise en charge des captures d’écran pour iPhone, iPad, Apple Watch et Apple TV",
+      "Ajoutez du texte marketing librement et ajustez la mise en page visuellement"
+    ],
+    "aiTitle": "Localisation propulsée par l’IA",
+    "aiBody": "Grâce à l’intégration d’Ollama, générez du texte marketing traduit par code de pays pour des soumissions mondiales rapides.",
+    "aiLink": "Ouvrir le tutoriel de configuration d’Ollama →",
+    "privacyTitle": "La confidentialité d’abord",
+    "privacyBody": "L’édition et la génération d’images se font localement. Aucun suivi. Aucune analyse. Aucune publicité.",
+    "learnTitle": "En savoir plus",
+    "learnBody": "Lisez notre Politique de confidentialité pour savoir comment nous protégeons vos données.",
+    "learnLink": "Politique de confidentialité →",
+    "footerNote": "Astuce : ajoutez <code>?lang=ko</code> (ou tout autre code pris en charge) à l’URL pour prévisualiser une langue.",
+    "supportedPill": "Prise en charge de l’iPhone · de l’iPad · de l’Apple Watch · de l’Apple TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Tutoriel de configuration d’Ollama",
+    "subtitle": "Connectez Screenshot (App) Maker à votre propre instance Ollama pour la traduction par IA et la génération de texte.",
+    "requirementsTitle": "Ce dont vous avez besoin",
+    "requirements": [
+      "Un Mac, un PC Windows ou une machine Linux pour exécuter Ollama",
+      "Ollama installé et en cours d’exécution",
+      "Votre iPhone/iPad sur le même réseau que la machine Ollama (recommandé)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Installez Ollama</strong> : téléchargez et installez Ollama pour votre système d’exploitation.",
+      "<strong>Démarrez Ollama</strong> : exécutez <code>ollama serve</code> (ou ouvrez l’application Ollama sur macOS).",
+      "<strong>Récupérez un modèle</strong> : exécutez <code>ollama pull llama3.2</code> (ou le modèle de votre choix).",
+      "<strong>Vérifiez qu’il fonctionne</strong> : exécutez <code>ollama run llama3.2</code> et testez une invite.",
+      "<strong>Trouvez l’adresse de votre serveur</strong> : notez l’adresse IP LAN de votre ordinateur (p. ex. <code>192.168.0.10</code>).",
+      "<strong>Utilisez-le dans l’application</strong> : dans les paramètres de Screenshot (App) Maker, définissez l’hôte sur <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Notes et dépannage",
+    "notes": [
+      "Si l’application ne peut pas se connecter, vérifiez que votre téléphone et votre ordinateur sont sur le même réseau Wi‑Fi.",
+      "Assurez-vous que le port <code>11434</code> est autorisé par votre pare-feu.",
+      "Si vous préférez utiliser un serveur distant (PC domestique, VPS), vous devez exposer le port en toute sécurité (VPN recommandé)."
+    ],
+    "backHome": "← Retour à l’accueil"
+  }
+}

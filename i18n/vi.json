@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Công cụ tạo ảnh chụp màn hình (Ứng dụng)",
+    "description": "Tạo ảnh chụp màn hình App Store hiện đại, rõ ràng một cách dễ dàng bằng cách sử dụng các mẫu linh hoạt.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Hướng dẫn cài đặt Ollama",
+    "privacy": "Chính sách bảo mật"
+  },
+  "langPicker": {
+    "title": "Chọn một ngôn ngữ",
+    "close": "Close",
+    "hint": "Thiếu bản dịch? Tạo <code>./i18n/&lt;code&gt;.json</code> (giống các khóa như <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Công cụ tạo ảnh chụp màn hình (Ứng dụng)",
+    "brandSubtitle": "Ảnh chụp màn hình App Store, dễ dàng thực hiện.",
+    "heroTitle": "Tạo ảnh chụp màn hình App Store trong vài phút",
+    "heroBody": "Chọn 3–5 ảnh chụp màn hình, thả chúng vào các mẫu, thêm văn bản quảng cáo và xuất hình ảnh sẵn sàng để tải lên.",
+    "featuresTitle": "Các tính năng chính",
+    "features": [
+      "Tạo ảnh chụp màn hình App Store phong cách bằng cách sử dụng các mẫu có thể tùy chỉnh",
+      "Nhập hình ảnh từ ứng dụng Tệp hoặc thư viện ảnh của bạn",
+      "Hỗ trợ ảnh chụp màn hình cho iPhone, iPad, Apple Watch và Apple TV",
+      "Thêm văn bản quảng cáo một cách tự do và điều chỉnh bố cục trực quan"
+    ],
+    "aiTitle": "Địa phương hóa bằng AI",
+    "aiBody": "Với tích hợp Ollama, tạo văn bản quảng cáo đã dịch theo mã quốc gia để gửi bản địa hóa nhanh chóng.",
+    "aiLink": "Mở hướng dẫn cài đặt Ollama →",
+    "privacyTitle": "Bảo mật là ưu tiên hàng đầu",
+    "privacyBody": "Chỉnh sửa và tạo hình ảnh diễn ra cục bộ. Không theo dõi. Không phân tích. Không quảng cáo.",
+    "learnTitle": "Tìm hiểu thêm",
+    "learnBody": "Đọc Chính sách bảo mật của chúng tôi để hiểu cách chúng tôi bảo vệ dữ liệu của bạn.",
+    "learnLink": "Chính sách quyền riêng tư →",
+    "footerNote": "Mẹo: thêm <code>?lang=ko</code> (hoặc bất kỳ mã ngôn ngữ nào được hỗ trợ) vào URL để xem trước ngôn ngữ.",
+    "supportedPill": "Hỗ trợ iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Hướng dẫn thiết lập Ollama",
+    "subtitle": "Kết nối Screenshot (App) Maker với phiên bản Ollama của bạn để dịch thuật bằng AI và tạo văn bản.",
+    "requirementsTitle": "Bạn cần",
+    "requirements": [
+      "Một máy Mac, PC Windows hoặc Linux để chạy Ollama",
+      "Ollama đã được cài đặt và đang chạy",
+      "iPhone/iPad của bạn trên cùng một mạng với máy Ollama (được khuyến nghị)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Cài đặt Ollama</strong>: tải xuống và cài đặt Ollama cho hệ điều hành của bạn.",
+      "<strong>Khởi động Ollama</strong>: chạy <code>ollama serve</code> (hoặc mở ứng dụng Ollama trên macOS).",
+      "<strong>Tải một mô hình</strong>: chạy <code>ollama pull llama3.2</code> (hoặc mô hình bạn chọn).",
+      "<strong>Xác nhận nó hoạt động</strong>: chạy <code>ollama run llama3.2</code> và kiểm tra một lời nhắc.",
+      "<strong>Tìm địa chỉ máy chủ của bạn</strong>: ghi lại địa chỉ IP LAN của máy tính của bạn (ví dụ: <code>192.168.0.10</code>).",
+      "<strong>Sử dụng nó trong ứng dụng</strong>: trong cài đặt Screenshot (App) Maker, đặt Host thành <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Ghi chú & khắc phục sự cố",
+    "notes": [
+      "Nếu ứng dụng không thể kết nối, hãy kiểm tra xem điện thoại và máy tính của bạn có trên cùng một mạng Wi‑Fi hay không.",
+      "Đảm bảo cổng <code>11434</code> được phép bởi tường lửa của bạn.",
+      "Nếu bạn muốn sử dụng một máy chủ từ xa (PC, VPS), bạn phải mở cổng một cách an toàn (khuyến nghị VPN)."
+    ],
+    "backHome": "← Quay lại Trang chủ"
+  }
+}

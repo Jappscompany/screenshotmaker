@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "截圖 (App) 製作工具",
+    "description": "使用靈活的範本，輕鬆製作乾淨、現代的 App Store 截圖。",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Ollama 設定教學",
+    "privacy": "隱私權政策"
+  },
+  "langPicker": {
+    "title": "選擇語言",
+    "close": "Close",
+    "hint": "缺少翻譯？建立 <code>./i18n/&lt;code&gt;.json</code>（與 <code>en.json</code> 具有相同的鍵）。"
+  },
+  "home": {
+    "brandTitle": "截圖 (App) 製作工具",
+    "brandSubtitle": "App Store 截圖，輕鬆製作。",
+    "heroTitle": "幾分鐘內製作 App Store 截圖",
+    "heroBody": "挑選 3–5 張截圖，放入範本，新增行銷文字，然後匯出可供上傳的圖片。",
+    "featuresTitle": "主要功能",
+    "features": [
+      "使用可自訂的範本製作時尚的 App Store 截圖",
+      "從「檔案」App 或您的相簿匯入圖片",
+      "支援 iPhone、iPad、Apple Watch 和 Apple TV 截圖",
+      "自由新增行銷文字，並以視覺方式調整版面配置"
+    ],
+    "aiTitle": "AI 驅動的本地化",
+    "aiBody": "透過 Ollama 整合，為快速的全球提交，產生每個國家/地區代碼的翻譯行銷文字。",
+    "aiLink": "開啟 Ollama 設定教學 →",
+    "privacyTitle": "注重隱私",
+    "privacyBody": "編輯和圖片生成都在本地進行。沒有追蹤。沒有分析。沒有廣告。",
+    "learnTitle": "了解更多",
+    "learnBody": "閱讀我們的隱私權政策，以了解我們如何保護您的資料。",
+    "learnLink": "隱私權政策 →",
+    "footerNote": "提示：在 URL 附加 <code>?lang=ko</code>（或任何支援的程式碼）以預覽本地化。",
+    "supportedPill": "支援 iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Ollama 設定教學",
+    "subtitle": "將 Screenshot (App) Maker 連接到您自己的 Ollama 執行個體，以進行 AI 翻譯和文字產生。",
+    "requirementsTitle": "您需要",
+    "requirements": [
+      "一台 Mac、Windows PC 或 Linux 機器來執行 Ollama",
+      "已安裝並執行 Ollama",
+      "您的 iPhone/iPad 與 Ollama 機器在同一網路 (建議)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>安裝 Ollama</strong>：下載並安裝 Ollama 到您的作業系統。",
+      "<strong>啟動 Ollama</strong>：執行 <code>ollama serve</code>（或在 macOS 上開啟 Ollama 應用程式）。",
+      "<strong>拉取模型</strong>：執行 <code>ollama pull llama3.2</code>（或您偏好的模型）。",
+      "<strong>確認它正常運作</strong>：執行 <code>ollama run llama3.2</code> 並測試提示。",
+      "<strong>尋找您的伺服器位址</strong>：記下您電腦的區域網路 IP (例如 <code>192.168.0.10</code>)。",
+      "<strong>在應用程式中使用它</strong>：在 Screenshot (App) Maker 設定中，將 Host 設定為 <code>http://&lt;LAN-IP&gt;:11434</code>。"
+    ],
+    "notesTitle": "注意事項與疑難排解",
+    "notes": [
+      "如果應用程式無法連線，請檢查您的手機和電腦是否在同一個 Wi-Fi 網路。",
+      "請確保您的防火牆允許連接埠 <code>11434</code>。",
+      "如果您想要使用遠端伺服器（家用電腦、VPS），您必須安全地公開連接埠（建議使用 VPN）。"
+    ],
+    "backHome": "← 返回首頁"
+  }
+}

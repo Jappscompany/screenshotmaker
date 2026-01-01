@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Výrobce snímků obrazovky (App)",
+    "description": "Vytvářejte čisté, moderní snímky obrazovky App Store bez námahy pomocí flexibilních šablon.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Tutoriál Nastavení Ollama",
+    "privacy": "Zásady ochrany osobních údajů"
+  },
+  "langPicker": {
+    "title": "Vyberte jazyk",
+    "close": "Close",
+    "hint": "Chybí překlady? Vytvořte <code>./i18n/&lt;code&gt;.json</code> (stejné klíče jako <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Výrobce snímků obrazovky (App)",
+    "brandSubtitle": "Snímky obrazovky App Store, snadno.",
+    "heroTitle": "Vytvořte snímky obrazovky App Store během několika minut",
+    "heroBody": "Vyberte 3–5 snímků obrazovky, vložte je do šablon, přidejte marketingový text a exportujte obrázky připravené k nahrání.",
+    "featuresTitle": "Klíčové vlastnosti",
+    "features": [
+      "Vytvářejte stylové snímky obrazovky App Store pomocí přizpůsobitelných šablon",
+      "Importujte obrázky z aplikace Soubory nebo z vaší fotogalerie",
+      "Podpora snímků obrazovky pro iPhone, iPad, Apple Watch a Apple TV",
+      "Přidejte marketingový text volně a upravte rozložení vizuálně"
+    ],
+    "aiTitle": "AI-powered lokalizace",
+    "aiBody": "S integrací Ollama generujte přeložený marketingový text pro každý kód země, abyste urychlili globální odesílání.",
+    "aiLink": "Otevřít tutoriál Nastavení Ollama →",
+    "privacyTitle": "Ochrana soukromí na prvním místě",
+    "privacyBody": "Úpravy a generování obrázků probíhají lokálně. Žádné sledování. Žádná analytika. Žádné reklamy.",
+    "learnTitle": "Zjistěte více",
+    "learnBody": "Přečtěte si naše Zásady ochrany osobních údajů, abyste pochopili, jak chráníme vaše data.",
+    "learnLink": "Zásady ochrany soukromí →",
+    "footerNote": "Tip: připojte <code>?lang=ko</code> (nebo jiný podporovaný kód) k URL pro náhled lokalizace.",
+    "supportedPill": "Podporuje iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Tutoriál k nastavení Ollamy",
+    "subtitle": "Připojte Screenshot (App) Maker k vaší vlastní instanci Ollamy pro AI překlad a generování textu.",
+    "requirementsTitle": "Co potřebujete",
+    "requirements": [
+      "Mac, Windows PC nebo Linux stroj pro spuštění Ollamy",
+      "Nainstalovaná a spuštěná Ollama",
+      "Váš iPhone/iPad ve stejné síti jako stroj s Ollamou (doporučeno)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Nainstalujte Ollamu</strong>: stáhněte si a nainstalujte Ollamu pro váš OS.",
+      "<strong>Spusťte Ollamu</strong>: spusťte <code>ollama serve</code> (nebo otevřete aplikaci Ollama na macOS).",
+      "<strong>Stáhněte model</strong>: spusťte <code>ollama pull llama3.2</code> (nebo preferovaný model).",
+      "<strong>Ověřte, že funguje</strong>: spusťte <code>ollama run llama3.2</code> a otestujte prompt.",
+      "<strong>Zjistěte adresu serveru</strong>: poznamenejte si LAN IP vašeho počítače (např. <code>192.168.0.10</code>).",
+      "<strong>Použijte ji v aplikaci</strong>: v nastavení Screenshot (App) Maker nastavte Host na <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Poznámky a odstraňování problémů",
+    "notes": [
+      "Pokud se aplikace nemůže připojit, zkontrolujte, zda jsou váš telefon a počítač ve stejné Wi‑Fi síti.",
+      "Ujistěte se, že brána firewall povoluje port <code>11434</code>.",
+      "Pokud preferujete používat vzdálený server (domácí PC, VPS), musíte port bezpečně zpřístupnit (doporučuje se VPN)."
+    ],
+    "backHome": "← Zpět na Domů"
+  }
+}

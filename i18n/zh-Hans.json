@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "截图 (App) 制作器",
+    "description": "使用灵活的模板轻松创建干净、现代的应用商店截图。",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Ollama 设置教程",
+    "privacy": "隐私政策"
+  },
+  "langPicker": {
+    "title": "选择语言",
+    "close": "Close",
+    "hint": "缺少翻译？创建 <code>./i18n/&lt;code&gt;.json</code> (与 <code>en.json</code> 相同的键)。"
+  },
+  "home": {
+    "brandTitle": "截图 (App) 制作器",
+    "brandSubtitle": "轻松制作的应用商店截图。",
+    "heroTitle": "几分钟内制作应用商店截图",
+    "heroBody": "选择 3–5 张截图，放入模板，添加营销文字，并导出可上传的图像。",
+    "featuresTitle": "主要特点",
+    "features": [
+      "使用可自定义的模板创建时尚的应用商店截图",
+      "从文件应用程序或您的照片库导入图像",
+      "支持 iPhone、iPad、Apple Watch 和 Apple TV 截图",
+      "自由添加营销文字并以视觉方式调整布局"
+    ],
+    "aiTitle": "人工智能本地化",
+    "aiBody": "通过 Ollama 集成，为快速的全球提交生成每个国家/地区的翻译营销文字。",
+    "aiLink": "打开 Ollama 设置教程 →",
+    "privacyTitle": "隐私至上",
+    "privacyBody": "编辑和图像生成在本地进行。没有跟踪。没有分析。没有广告。",
+    "learnTitle": "了解更多",
+    "learnBody": "阅读我们的隐私政策以了解我们如何保护您的数据。",
+    "learnLink": "隐私政策 →",
+    "footerNote": "提示：在 URL 后面附加 <code>?lang=ko</code>（或任何受支持的代码）以预览区域设置。",
+    "supportedPill": "支持 iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 截图 (App) Maker"
+  },
+  "ollama": {
+    "title": "Ollama 设置教程",
+    "subtitle": "将截图 (App) Maker 连接到您自己的 Ollama 实例，以进行 AI 翻译和文本生成。",
+    "requirementsTitle": "您需要的东西",
+    "requirements": [
+      "一台运行 Ollama 的 Mac、Windows PC 或 Linux 机器",
+      "已安装并正在运行的 Ollama",
+      "与 Ollama 机器在同一网络上的 iPhone/iPad（推荐）"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>安装 Ollama</strong>：下载并安装适用于您的操作系统的 Ollama。",
+      "<strong>启动 Ollama</strong>：运行 <code>ollama serve</code>（或在 macOS 上打开 Ollama 应用程序）。",
+      "<strong>拉取模型</strong>：运行 <code>ollama pull llama3.2</code>（或您喜欢的模型）。",
+      "<strong>确认它是否有效</strong>：运行 <code>ollama run llama3.2</code> 并测试提示。",
+      "<strong>查找您的服务器地址</strong>：记下您的计算机的局域网 IP（例如 <code>192.168.0.10</code>）。",
+      "<strong>在应用程序中使用它</strong>：在截图 (App) Maker 设置中，将 Host 设置为 <code>http://&lt;LAN-IP&gt;:11434</code>。"
+    ],
+    "notesTitle": "注意事项和故障排除",
+    "notes": [
+      "如果应用程序无法连接，请检查您的手机和计算机是否在同一 Wi‑Fi 网络上。",
+      "确保您的防火墙允许端口 <code>11434</code>。",
+      "如果您希望使用远程服务器（家庭 PC、VPS），则必须安全地公开该端口（推荐使用 VPN）。"
+    ],
+    "backHome": "← 返回首页"
+  }
+}

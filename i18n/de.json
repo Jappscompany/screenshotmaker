@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Screenshot (App) Maker",
+    "description": "Erstellen Sie mühelos saubere, moderne App Store-Screenshots mit flexiblen Vorlagen.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Ollama-Einrichtungstutorial",
+    "privacy": "Datenschutzrichtlinie"
+  },
+  "langPicker": {
+    "title": "Sprache auswählen",
+    "close": "Close",
+    "hint": "Fehlen Übersetzungen? Erstellen Sie <code>./i18n/&lt;code&gt;.json</code> (gleiche Schlüssel wie <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Screenshot (App) Maker",
+    "brandSubtitle": "App Store-Screenshots, einfach gemacht.",
+    "heroTitle": "Erstellen Sie App Store-Screenshots in Minuten",
+    "heroBody": "Wählen Sie 3–5 Screenshots aus, fügen Sie sie in Vorlagen ein, fügen Sie Marketingtexte hinzu und exportieren Sie fertige Bilder zur Hochladung.",
+    "featuresTitle": "Hauptmerkmale",
+    "features": [
+      "Erstellen Sie stilvolle App Store-Screenshots mit anpassbaren Vorlagen",
+      "Importieren Sie Bilder aus der Dateien-App oder Ihrer Fotos-Bibliothek",
+      "Unterstützung für Screenshots von iPhone, iPad, Apple Watch und Apple TV",
+      "Fügen Sie Marketingtexte frei hinzu und passen Sie das Layout visuell an"
+    ],
+    "aiTitle": "KI-gestützte Lokalisierung",
+    "aiBody": "Mit der Ollama-Integration generieren Sie übersetzte Marketingtexte pro Ländercode für schnelle globale Einreichungen.",
+    "aiLink": "Öffnen Sie das Ollama-Einrichtungstutorial →",
+    "privacyTitle": "Datenschutz geht vor",
+    "privacyBody": "Bearbeitung und Bildgenerierung erfolgen lokal. Keine Nachverfolgung. Keine Analytik. Keine Werbung.",
+    "learnTitle": "Mehr erfahren",
+    "learnBody": "Lesen Sie unsere Datenschutzrichtlinie, um zu verstehen, wie wir Ihre Daten schützen.",
+    "learnLink": "Datenschutzrichtlinie →",
+    "footerNote": "Tipp: Hängen Sie <code>?lang=ko</code> (oder einen anderen unterstützten Code) an die URL an, um ein Gebietsschema in Vorschau anzuzeigen.",
+    "supportedPill": "Unterstützt iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Ollama-Einrichtungsanleitung",
+    "subtitle": "Verbinden Sie Screenshot (App) Maker mit Ihrer eigenen Ollama-Instanz für KI-Übersetzung und Textgenerierung.",
+    "requirementsTitle": "Was Sie benötigen",
+    "requirements": [
+      "Ein Mac, PC oder Linux-Gerät zum Ausführen von Ollama",
+      "Ollama installiert und ausgeführt",
+      "Ihr iPhone/iPad im selben Netzwerk wie der Ollama-Rechner (empfohlen)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Installieren Sie Ollama</strong>: laden Sie Ollama für Ihr Betriebssystem herunter und installieren Sie es.",
+      "<strong>Starten Sie Ollama</strong>: führen Sie <code>ollama serve</code> aus (oder öffnen Sie die Ollama-App auf macOS).",
+      "<strong>Laden Sie ein Modell herunter</strong>: führen Sie <code>ollama pull llama3.2</code> aus (oder Ihr bevorzugtes Modell).",
+      "<strong>Überprüfen Sie, ob es funktioniert</strong>: führen Sie <code>ollama run llama3.2</code> aus und testen Sie eine Eingabeaufforderung.",
+      "<strong>Finden Sie Ihre Serveradresse</strong>: notieren Sie sich die LAN-IP Ihres Computers (z. B. <code>192.168.0.10</code>).",
+      "<strong>Verwenden Sie es in der App</strong>: setzen Sie in den Einstellungen von Screenshot (App) Maker Host auf <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Hinweise & Fehlerbehebung",
+    "notes": [
+      "Wenn die App keine Verbindung herstellen kann, überprüfen Sie, ob sich Ihr Telefon und Ihr Computer im selben WLAN-Netzwerk befinden.",
+      "Stellen Sie sicher, dass Port <code>11434</code> von Ihrer Firewall zugelassen wird.",
+      "Wenn Sie einen Remote-Server (PC, VPS) verwenden möchten, müssen Sie den Port sicher freigeben (VPN empfohlen)."
+    ],
+    "backHome": "← Zurück zur Startseite"
+  }
+}

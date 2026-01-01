@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Creator de capturi de ecran (App)",
+    "description": "Creează capturi de ecran moderne și curate pentru App Store cu ușurință, folosind șabloane flexibile.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Tutorial configurare Ollama",
+    "privacy": "Politica de confidențialitate"
+  },
+  "langPicker": {
+    "title": "Alege o limbă",
+    "close": "Close",
+    "hint": "Lipsesc traduceri? Creează <code>./i18n/&lt;code&gt;.json</code> (aceleași chei ca <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Creator de capturi de ecran (App)",
+    "brandSubtitle": "Capturi de ecran App Store, simplificate.",
+    "heroTitle": "Creează capturi de ecran pentru App Store în câteva minute",
+    "heroBody": "Alege 3–5 capturi de ecran, adaugă-le în șabloane, adaugă text de marketing și exportă imagini gata de încărcat.",
+    "featuresTitle": "Funcții cheie",
+    "features": [
+      "Creează capturi de ecran elegante pentru App Store folosind șabloane personalizabile",
+      "Importă imagini din aplicația Files sau din biblioteca ta foto",
+      "Suport pentru capturi de ecran pentru iPhone, iPad, Apple Watch și Apple TV",
+      "Adaugă text de marketing liber și ajustează aspectul vizual"
+    ],
+    "aiTitle": "Localizare bazată pe AI",
+    "aiBody": "Cu integrarea Ollama, generează text de marketing tradus pentru fiecare cod de țară pentru lansări globale rapide.",
+    "aiLink": "Deschide tutorialul de configurare Ollama →",
+    "privacyTitle": "Confidențialitate pe primul loc",
+    "privacyBody": "Editarea și generarea imaginilor se realizează local. Fără urmărire. Fără analize. Fără reclame.",
+    "learnTitle": "Află mai multe",
+    "learnBody": "Citește Politica noastră de confidențialitate pentru a înțelege cum protejăm datele tale.",
+    "learnLink": "Politica de confidențialitate →",
+    "footerNote": "Sfat: adaugă <code>?lang=ko</code> (sau orice cod suportat) la adresa URL pentru a previzualiza o localizare.",
+    "supportedPill": "Suportă iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Tutorial de configurare Ollama",
+    "subtitle": "Conectează Screenshot (App) Maker la propria ta instanță Ollama pentru traducere AI și generare de text.",
+    "requirementsTitle": "Ce ai nevoie",
+    "requirements": [
+      "Un Mac, PC Windows sau o mașină Linux pentru a rula Ollama",
+      "Ollama instalat și rulând",
+      "iPhone-ul/iPad-ul tău pe aceeași rețea ca și mașina Ollama (recomandat)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Instalează Ollama</strong>: descarcă și instalează Ollama pentru sistemul tău de operare.",
+      "<strong>Pornește Ollama</strong>: rulează <code>ollama serve</code> (sau deschide aplicația Ollama pe macOS).",
+      "<strong>Extrage un model</strong>: rulează <code>ollama pull llama3.2</code> (sau modelul tău preferat).",
+      "<strong>Confirmă că funcționează</strong>: rulează <code>ollama run llama3.2</code> și testează o solicitare.",
+      "<strong>Găsește adresa serverului tău</strong>: notează adresa IP LAN a computerului tău (de exemplu <code>192.168.0.10</code>).",
+      "<strong>Folosește-o în aplicație</strong>: în setările Screenshot (App) Maker, setează Host la <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Note & depanare",
+    "notes": [
+      "Dacă aplicația nu se poate conecta, verifică dacă telefonul și computerul tău sunt pe aceeași rețea Wi‑Fi.",
+      "Asigură-te că portul <code>11434</code> este permis de firewall-ul tău.",
+      "Dacă preferi să folosești un server de la distanță (PC de acasă, VPS), trebuie să expui portul în mod sigur (VPN recomandat)."
+    ],
+    "backHome": "← Înapoi la Pagina Principală"
+  }
+}

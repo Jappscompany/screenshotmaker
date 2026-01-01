@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Creador d'imatges de pantalla (App)",
+    "description": "Creeu capturas de pantalla de l'App Store netes i modernes sense esforç utilitzant plantilles flexibles.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Tutorial de configuració d'Ollama",
+    "privacy": "Política de privacitat"
+  },
+  "langPicker": {
+    "title": "Trieu un idioma",
+    "close": "Close",
+    "hint": "Falten traduccions? Creeu <code>./i18n/&lt;code&gt;.json</code> (les mateixes claus que <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Creador d'imatges de pantalla (App)",
+    "brandSubtitle": "Captures de pantalla de l'App Store, fet fàcil.",
+    "heroTitle": "Creeu capturas de pantalla de l'App Store en minuts",
+    "heroBody": "Trieu de 3 a 5 captures de pantalla, deixeu-les a les plantilles, afegiu text de màrqueting i exporteu imatges preparades per carregar-se.",
+    "featuresTitle": "Funcionalitats principals",
+    "features": [
+      "Creeu captures de pantalla elegants de l'App Store utilitzant plantilles personalitzables",
+      "Importeu imatges des de l'aplicació Arxius o la vostra biblioteca de fotos",
+      "Suport per a captures de pantalla d'iPhone, iPad, Apple Watch i Apple TV",
+      "Afegeix text de màrqueting lliurement i ajusta el disseny visualment"
+    ],
+    "aiTitle": "Localització impulsada per IA",
+    "aiBody": "Amb la integració d'Ollama, genereu text de màrqueting traduït per codi de país per a enviaments globals ràpids.",
+    "aiLink": "Obriu el tutorial de configuració d'Ollama →",
+    "privacyTitle": "Privacitat primer",
+    "privacyBody": "L'edició i la generació d'imatges es produeixen localment. Sense seguiment. Sense anàlisi. Sense anuncis.",
+    "learnTitle": "Apreneu-ne més",
+    "learnBody": "Llegiu la nostra política de privacitat per entendre com protecció les vostres dades.",
+    "learnLink": "Política de privacitat →",
+    "footerNote": "Consell: afegeix <code>?lang=ko</code> (o qualsevol codi admetut) a la URL per previsualitzar un idioma.",
+    "supportedPill": "Compatible amb iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Tutorial de configuració d'Ollama",
+    "subtitle": "Connecta Screenshot (App) Maker a la teva pròpia instància d'Ollama per a la traducció mitjançant IA i la generació de text.",
+    "requirementsTitle": "El que necessites",
+    "requirements": [
+      "Un Mac, PC amb Windows o màquina Linux per executar Ollama",
+      "Ollama instal·lat i en funcionament",
+      "El teu iPhone/iPad a la mateixa xarxa que la màquina Ollama (recomanat)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Instal·la Ollama</strong>: descarrega i instal·la Ollama per al teu sistema operatiu.",
+      "<strong>Inicia Ollama</strong>: executa <code>ollama serve</code> (o obre l'aplicació Ollama a macOS).",
+      "<strong>Estira un model</strong>: executa <code>ollama pull llama3.2</code> (o el model que prefereixis).",
+      "<strong>Confirma que funciona</strong>: executa <code>ollama run llama3.2</code> i prova un indicador.",
+      "<strong>Troba la teva adreça del servidor</strong>: anota la IP de la teva xarxa local (per exemple, <code>192.168.0.10</code>).",
+      "<strong>Utilitza-ho a l'aplicació</strong>: a la configuració de Screenshot (App) Maker, estableix l'amfitrió a <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Notes i resolució de problemes",
+    "notes": [
+      "Si l'aplicació no pot connectar-se, comprova que el teu telèfon i l'ordinador estan a la mateixa xarxa Wi‑Fi.",
+      "Assegura't que el port <code>11434</code> estigui permès pel teu tallafocs.",
+      "Si prefereixes utilitzar un servidor remot (PC de casa, VPS), has d'exposar el port de forma segura (VPN recomanada)."
+    ],
+    "backHome": "← Torna a Inici"
+  }
+}

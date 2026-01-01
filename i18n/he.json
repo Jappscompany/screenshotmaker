@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "יוצר צילומי מסך (אפליקציה)",
+    "description": "צור צילומי מסך של App Store נקיים ומודרניים בקלות באמצעות תבניות גמישות.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "מדריך להתקנת Ollama",
+    "privacy": "מדיניות פרטיות"
+  },
+  "langPicker": {
+    "title": "בחר שפה",
+    "close": "Close",
+    "hint": "חסרים תרגומים? צור <code>./i18n/&lt;code&gt;.json</code> (אותם מפתחות כמו <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "יוצר צילומי מסך (אפליקציה)",
+    "brandSubtitle": "צילומי מסך של App Store, בקלות.",
+    "heroTitle": "צור צילומי מסך של App Store תוך דקות",
+    "heroBody": "בחר 3–5 צילומי מסך, הכנס אותם לתבניות, הוסף טקסט שיווקי וייצא תמונות מוכנות להעלאה.",
+    "featuresTitle": "תכונות עיקריות",
+    "features": [
+      "צור צילומי מסך מסוגננים של App Store באמצעות תבניות הניתנות להתאמה אישית",
+      "ייבא תמונות מאפליקציית Files או מספריית התמונות שלך",
+      "תמיכה בצילומי מסך עבור iPhone, iPad, Apple Watch ו-Apple TV",
+      "הוסף טקסט שיווקי באופן חופשי והתאם את הפריסה באופן ויזואלי"
+    ],
+    "aiTitle": "לוקליזציה מופעלת על ידי AI",
+    "aiBody": "עם אינטגרציית Ollama, צור טקסט שיווקי מתורגם לפי קוד מדינה עבור הגשות גלובליות מהירות.",
+    "aiLink": "פתח את מדריך ההתקנה של Ollama →",
+    "privacyTitle": "פרטיות במקום הראשון",
+    "privacyBody": "עריכה ויצירת תמונות מתרחשת באופן מקומי. אין מעקב. אין ניתוח. אין פרסומות.",
+    "learnTitle": "למידע נוסף",
+    "learnBody": "קרא את מדיניות הפרטיות שלנו כדי להבין כיצד אנו מגנים על הנתונים שלך.",
+    "learnLink": "מדיניות פרטיות →",
+    "footerNote": "טיפ: צרף <code>?lang=ko</code> (או כל קוד נתמך אחר) לכתובת האתר כדי לצפות בתצוגה מקומית.",
+    "supportedPill": "תומך ב-iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "מדריך התקנת Ollama",
+    "subtitle": "חבר את Screenshot (App) Maker למופע Ollama שלך לתרגום AI ויצירת טקסט.",
+    "requirementsTitle": "מה שאתה צריך",
+    "requirements": [
+      "מחשב Mac, Windows או Linux להפעלת Ollama",
+      "Ollama מותקן ופועל",
+      "ה-iPhone/iPad שלך באותה רשת כמו מכונת Ollama (מומלץ)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>התקן Ollama</strong>: הורד והתקן את Ollama עבור מערכת ההפעלה שלך.",
+      "<strong>הפעל Ollama</strong>: הפעל <code>ollama serve</code> (או פתח את אפליקציית Ollama ב-macOS).",
+      "<strong>משוך מודל</strong>: הפעל <code>ollama pull llama3.2</code> (או את המודל המועדף עליך).",
+      "<strong>ודא שהוא עובד</strong>: הפעל <code>ollama run llama3.2</code> ובדוק הנחיה.",
+      "<strong>מצא את כתובת השרת שלך</strong>: רשום את כתובת ה-LAN של המחשב שלך (לדוגמה <code>192.168.0.10</code>).",
+      "<strong>השתמש בו באפליקציה</strong>: בהגדרות Screenshot (App) Maker, הגדר Host ל <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "הערות ופתרון בעיות",
+    "notes": [
+      "אם האפליקציה לא מצליחה להתחבר, ודא שהטלפון והמחשב שלך נמצאים באותה רשת Wi‑Fi.",
+      "ודא שיציאה <code>11434</code> מותרת על ידי חומת האש שלך.",
+      "אם אתה מעדיף להשתמש בשרת מרוחק (מחשב ביתי, VPS), עליך לחשוף את היציאה בצורה מאובטחת (מומלץ VPN)."
+    ],
+    "backHome": "← חזרה לדף הבית"
+  }
+}

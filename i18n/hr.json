@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Izrada snimki zaslona (Aplikacija)",
+    "description": "Jednostavno kreirajte čiste, moderne snimke zaslona za App Store koristeći fleksibilne predloške.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Tutorial za postavljanje Ollame",
+    "privacy": "Politika privatnosti"
+  },
+  "langPicker": {
+    "title": "Odaberite jezik",
+    "close": "Close",
+    "hint": "Nedostaju prijevodi? Kreirajte <code>./i18n/&lt;code&gt;.json</code> (isti ključevi kao <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Izrada snimki zaslona (Aplikacija)",
+    "brandSubtitle": "Snimke zaslona za App Store, lako napravljene.",
+    "heroTitle": "Napravite snimke zaslona za App Store u nekoliko minuta",
+    "heroBody": "Odaberite 3–5 snimki zaslona, unesite ih u predloške, dodajte marketinški tekst i izvezite spremne slike za učitavanje.",
+    "featuresTitle": "Ključne značajke",
+    "features": [
+      "Kreirajte elegantne snimke zaslona za App Store koristeći prilagodljive predloške",
+      "Uvozite slike iz aplikacije Datoteke ili vaše fototeke",
+      "Podrška za snimke zaslona za iPhone, iPad, Apple Watch i Apple TV",
+      "Slobodno dodajte marketinški tekst i vizualno prilagodite izgled"
+    ],
+    "aiTitle": "AI-pokretana lokalizacija",
+    "aiBody": "Uz integraciju Ollame, generirajte prevedeni marketinški tekst za svaku državu kako biste brzo poslali globalne objave.",
+    "aiLink": "Otvorite tutorial za postavljanje Ollame →",
+    "privacyTitle": "Privatnost na prvom mjestu",
+    "privacyBody": "Uređivanje i generiranje slika odvija se lokalno. Bez praćenja. Bez analitike. Bez oglasa.",
+    "learnTitle": "Saznajte više",
+    "learnBody": "Pročitajte našu Politiku privatnosti kako biste razumjeli kako štitimo vaše podatke.",
+    "learnLink": "Politika privatnosti →",
+    "footerNote": "Savjet: dodajte <code>?lang=ko</code> (ili bilo koji podržani kod) u URL za pregled lokalizacije.",
+    "supportedPill": "Podržava iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Tutorial za postavljanje Ollame",
+    "subtitle": "Povežite Screenshot (App) Maker sa vlastanom instancom Ollame za AI prijevod i generiranje teksta.",
+    "requirementsTitle": "Što vam je potrebno",
+    "requirements": [
+      "Mac, Windows PC ili Linux računalo za pokretanje Ollame",
+      "Ollama je instalirana i pokrenuta",
+      "Vaš iPhone/iPad na istoj mreži kao i računalo s Ollamom (preporučeno)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Instalirajte Ollamu</strong>: preuzmite i instalirajte Ollamu za vaš OS.",
+      "<strong>Pokrenite Ollamu</strong>: pokrenite <code>ollama serve</code> (ili otvorite Ollama aplikaciju na macOS-u).",
+      "<strong>Povucite model</strong>: pokrenite <code>ollama pull llama3.2</code> (ili vaš preferirani model).",
+      "<strong>Potvrdite da radi</strong>: pokrenite <code>ollama run llama3.2</code> i testirajte upit.",
+      "<strong>Pronađite adresu poslužitelja</strong>: zapišite LAN IP svoje računala (npr. <code>192.168.0.10</code>).",
+      "<strong>Koristite ga u aplikaciji</strong>: u postavkama Screenshot (App) Maker, postavite Host na <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Bilješke i rješavanje problema",
+    "notes": [
+      "Ako se aplikacija ne može povezati, provjerite jesu li vaš telefon i računalo na istoj Wi‑Fi mreži.",
+      "Provjerite je li vaša vatra (firewall) dopušta priključak <code>11434</code>.",
+      "Ako želite koristiti udaljeni poslužitelj (kućno računalo, VPS), morate sigurno otkriti priključak (VPN preporučeno)."
+    ],
+    "backHome": "← Natrag na početnu"
+  }
+}

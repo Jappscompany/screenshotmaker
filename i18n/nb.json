@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Skjermbilde (App) Maker",
+    "description": "Lag rene, moderne App Store-skjermbilder enkelt ved hjelp av fleksible maler.",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "ollamaSetup": "Ollama Oppsettveiledning",
+    "privacy": "Personvernserklæring"
+  },
+  "langPicker": {
+    "title": "Velg et språk",
+    "close": "Close",
+    "hint": "Manglende oversettelser? Opprett <code>./i18n/&lt;code&gt;.json</code> (samme nøkler som <code>en.json</code>)."
+  },
+  "home": {
+    "brandTitle": "Skjermbilde (App) Maker",
+    "brandSubtitle": "App Store-skjermbilder, gjort enkelt.",
+    "heroTitle": "Lag App Store-skjermbilder på minutter",
+    "heroBody": "Velg 3–5 skjermbilder, legg dem inn i maler, legg til markedsføringstekst og eksporter bilder som er klare til å lastes opp.",
+    "featuresTitle": "Nøkkelfunksjoner",
+    "features": [
+      "Lag stilige App Store-skjermbilder ved hjelp av tilpassbare maler",
+      "Importer bilder fra Filene-appen eller fotobiblioteket ditt",
+      "Støtte for iPhone-, iPad-, Apple Watch- og Apple TV-skjermbilder",
+      "Legg til markedsføringstekst fritt og juster layout visuelt"
+    ],
+    "aiTitle": "AI-drevet lokalisering",
+    "aiBody": "Med Ollama-integrasjon kan du generere oversatt markedsføringstekst per landskode for raske globale innsendinger.",
+    "aiLink": "Åpne Ollama-oppsettveiledningen →",
+    "privacyTitle": "Personvern først",
+    "privacyBody": "Redigering og bildegenerering skjer lokalt. Ingen sporing. Ingen analyse. Ingen annonser.",
+    "learnTitle": "Lær mer",
+    "learnBody": "Les vår Personvernserklæring for å forstå hvordan vi beskytter dine data.",
+    "learnLink": "Personvernregler →",
+    "footerNote": "Tips: Legg til <code>?lang=ko</code> (eller en annen støttet kode) til URL-en for å forhåndsvise et språk.",
+    "supportedPill": "Støtter iPhone · iPad · Watch · TV",
+    "copyright": "© 2026 Screenshot (App) Maker"
+  },
+  "ollama": {
+    "title": "Ollama Oppsettveiledning",
+    "subtitle": "Koble Screenshot (App) Maker til din egen Ollama-instans for AI-oversettelse og tekstgenerering.",
+    "requirementsTitle": "Hva du trenger",
+    "requirements": [
+      "En Mac, Windows-PC eller Linux-maskin for å kjøre Ollama",
+      "Ollama installert og kjørende",
+      "Din iPhone/iPad på samme nettverk som Ollama-maskinen (anbefales)"
+    ],
+    "stepsTitle": "Step-by-step",
+    "steps": [
+      "<strong>Installer Ollama</strong>: last ned og installer Ollama for ditt operativsystem.",
+      "<strong>Start Ollama</strong>: kjør <code>ollama serve</code> (eller åpne Ollama-appen på macOS).",
+      "<strong>Hent en modell</strong>: kjør <code>ollama pull llama3.2</code> (eller din foretrukne modell).",
+      "<strong>Bekreft at det fungerer</strong>: kjør <code>ollama run llama3.2</code> og test en melding.",
+      "<strong>Finn serveradressen din</strong>: noter din datamaskins LAN-IP (f.eks. <code>192.168.0.10</code>).",
+      "<strong>Bruk den i appen</strong>: i Screenshot (App) Maker-innstillinger, sett Host til <code>http://&lt;LAN-IP&gt;:11434</code>."
+    ],
+    "notesTitle": "Notater og feilsøking",
+    "notes": [
+      "Hvis appen ikke kan koble til, sjekk at telefonen og datamaskinen er på samme Wi‑Fi-nettverk.",
+      "Sørg for at port <code>11434</code> er tillatt av brannmuren din.",
+      "Hvis du foretrekker å bruke en ekstern server (hjemme-PC, VPS), må du eksponere porten sikkert (VPN anbefales)."
+    ],
+    "backHome": "← Tilbake til Hjem"
+  }
+}
